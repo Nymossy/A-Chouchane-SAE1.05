@@ -7,6 +7,8 @@ Programme pour traiter le fichier texte "Fichier texte à traiter.txt"
 
 import re
 import os
+import csv
+from collections import defaultdict
 
 def lire_fichier(file_path):
     """
@@ -58,6 +60,40 @@ def extraire_informations(lignes):
     
     return informations
 
+def compter_acces(informations):
+    """
+    Compte le nombre de fois qu'une même adresse IP accède à un même site web et le nombre de fois qu'un site web est visité.
+    
+    :param informations: Liste des dictionnaires des informations extraites
+    :return: Dictionnaire avec les adresses IP et les sites web et leur nombre d'accès, et le nombre de visites par site web
+    """
+    acces = defaultdict(int)
+    visites_site_web = defaultdict(int)
+    
+    for info in informations:
+        if info['adresse_ip'] and info['adresse_site_web']:
+            key = (info['adresse_ip'], info['adresse_site_web'])
+            acces[key] += 1
+        if info['adresse_site_web']:
+            visites_site_web[info['adresse_site_web']] += 1
+    
+    return acces, visites_site_web
+
+def enregistrer_informations_csv(informations, file_path):
+    """
+    Enregistre les informations extraites dans un fichier CSV.
+    
+    :param informations: Liste des dictionnaires des informations extraites
+    :param file_path: Chemin du fichier CSV
+    """
+    with open(file_path, 'w', newline='', encoding='utf-8') as csvfile:
+        fieldnames = ['nom_machine', 'adresse_ip', 'adresse_site_web']
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+        
+        writer.writeheader()
+        for info in informations:
+            writer.writerow(info)
+
 def main():
     # Afficher le répertoire de travail actuel
     print("Répertoire de travail actuel :", os.getcwd())
@@ -71,10 +107,39 @@ def main():
     # Extraire les informations des lignes lues
     informations = extraire_informations(lignes)
     
+    # Enregistrer les informations extraites dans un fichier CSV
+    csv_file_path = "Projet/informations_extraites.csv"
+    enregistrer_informations_csv(informations, csv_file_path)
+    
+    # Compter les accès des adresses IP aux sites web et les visites par site web
+    acces, visites_site_web = compter_acces(informations)
+    
     # Afficher les informations extraites
     print("Informations extraites :")
     for info in informations:
         print(info)
+    
+    # Afficher tous les accès des adresses IP aux sites web
+    print("\nTous les accès des adresses IP aux sites web :")
+    for (ip, site), count in acces.items():
+        print(f"{ip} accède à {site} : {count} fois")
+    
+    # Afficher le nombre de visites par site web
+    print("\nNombre de visites par site web :")
+    for site, count in visites_site_web.items():
+        print(f"{site} : {count} visites")
+    
+    # Afficher les accès des adresses IP aux sites web avec un nombre supérieur ou égal à 50
+    print("\nAccès des adresses IP aux sites web (50 fois ou plus) :")
+    for (ip, site), count in sorted(acces.items(), key=lambda item: item[1]):
+        if count >= 50:
+            print(f"{ip} accède à {site} : {count} fois")
+    
+    # Afficher les sites web visités 50 fois ou plus, sans adresse IP associée
+    print("\nSites web visités (50 fois ou plus, sans adresse IP associée) :")
+    for site, count in sorted(visites_site_web.items(), key=lambda item: item[1]):
+        if count >= 50 and not any(ip == site for ip, _ in acces.keys()):
+            print(f"{site} : {count} visites")
 
 # Point d'entrée du programme
 if __name__ == "__main__":

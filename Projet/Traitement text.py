@@ -28,56 +28,47 @@ def lire_fichier(file_path):
         print(f"Erreur: Impossible de lire le fichier '{file_path}'.")
         return []
 
+def filtrer_lignes(lignes):
+    """
+    Filtre les lignes qui commencent soit par "11:42", soit qui ne commencent pas par "0x".
+    
+    :param lignes: Liste des lignes à filtrer
+    :return: Liste des lignes filtrées
+    """
+    lignes_filtrees = [ligne for ligne in lignes if ligne.startswith("11:42") or not ligne.startswith("0x")]
+    return lignes_filtrees
+
+def ecrire_fichier(file_path, lignes):
+    """
+    Écrit les lignes filtrées dans un nouveau fichier texte.
+    
+    :param file_path: Chemin du fichier texte
+    :param lignes: Liste des lignes à écrire
+    """
+    with open(file_path, 'w', encoding='utf-8') as file:
+        for ligne in lignes:
+            file.write(ligne + '\n')
+
 def extraire_informations(lignes):
     """
-    Extrait les informations spécifiques des lignes du fichier texte.
+    Extrait les informations de source et de destination des lignes du fichier texte.
     
     :param lignes: Liste des lignes à traiter
     :return: Liste des dictionnaires des informations extraites
     """
     informations = []
     
-    ip_pattern = re.compile(r'\b(?:[0-9]{1,3}\.){3}[0-9]{1,3}\b')
-    machine_name_pattern = re.compile(r'\b(?:[a-zA-Z0-9-_]+\.[a-zA-Z0-9-_]+)\b')
-    url_pattern = re.compile(r'\b(?:[a-zA-Z0-9-_]+\.[a-zA-Z0-9-_]+\.[a-zA-Z0-9-_]+)\b')
+    pattern = re.compile(r'IP\s+([^\s>]+)\s+>\s+([^\s:]+)')
     
     for ligne in lignes:
-        if ligne.startswith("11:42"):
+        if match := pattern.search(ligne):
             info = {
-                'nom_machine': None,
-                'adresse_ip': None,
-                'adresse_site_web': None
+                'source': match.group(1),
+                'destination': match.group(2)
             }
-            
-            if machine_name_match := machine_name_pattern.search(ligne):
-                info['nom_machine'] = machine_name_match.group()
-            if ip_match := ip_pattern.search(ligne):
-                info['adresse_ip'] = ip_match.group()
-            if url_match := url_pattern.search(ligne):
-                info['adresse_site_web'] = url_match.group()
-            
             informations.append(info)
     
     return informations
-
-def compter_acces(informations):
-    """
-    Compte le nombre de fois qu'une même adresse IP accède à un même site web et le nombre de fois qu'un site web est visité.
-    
-    :param informations: Liste des dictionnaires des informations extraites
-    :return: Dictionnaire avec les adresses IP et les sites web et leur nombre d'accès, et le nombre de visites par site web
-    """
-    acces = defaultdict(int)
-    visites_site_web = defaultdict(int)
-    
-    for info in informations:
-        if info['adresse_ip'] and info['adresse_site_web']:
-            key = (info['adresse_ip'], info['adresse_site_web'])
-            acces[key] += 1
-        if info['adresse_site_web']:
-            visites_site_web[info['adresse_site_web']] += 1
-    
-    return acces, visites_site_web
 
 def enregistrer_informations_csv(informations, file_path):
     """
@@ -87,12 +78,67 @@ def enregistrer_informations_csv(informations, file_path):
     :param file_path: Chemin du fichier CSV
     """
     with open(file_path, 'w', newline='', encoding='utf-8') as csvfile:
-        fieldnames = ['nom_machine', 'adresse_ip', 'adresse_site_web']
+        fieldnames = ['source', 'destination']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         
         writer.writeheader()
         for info in informations:
             writer.writerow(info)
+
+def normaliser_nom_machine(nom):
+    """
+    Normalise le nom de la machine pour regrouper les occurrences de "BP-Linux8", "par", et "190-0-175-100.gba.solunet.com.ar".
+    
+    :param nom: Le nom de la machine
+    :return: Le nom normalisé de la machine
+    """
+    if nom.startswith("BP-Linux8"):
+        return "BP-Linux8"
+    if nom.startswith("par"):
+        return "par.1e100"
+    if nom.startswith("190-0-175-100.gba.solunet.com.ar"):
+        return "190-0-175-100.gba.solunet.com.ar"
+    return nom
+
+def compter_visites(informations):
+    """
+    Compte combien de fois une source et une destination sont visitées.
+    
+    :param informations: Liste des dictionnaires des informations extraites
+    :return: Deux dictionnaires avec les sources et les destinations et leur nombre de visites
+    """
+    visites_sources = defaultdict(int)
+    visites_destinations = defaultdict(int)
+    
+    for info in informations:
+        source = normaliser_nom_machine(info['source'])
+        destination = normaliser_nom_machine(info['destination'])
+        visites_sources[source] += 1
+        visites_destinations[destination] += 1
+    
+    return visites_sources, visites_destinations
+
+def enregistrer_visites_csv(visites_sources, visites_destinations, file_path):
+    """
+    Enregistre les visites des sources et des destinations dans un fichier CSV.
+    
+    :param visites_sources: Dictionnaire des visites des sources
+    :param visites_destinations: Dictionnaire des visites des destinations
+    :param file_path: Chemin du fichier CSV
+    """
+    with open(file_path, 'w', newline='', encoding='utf-8') as csvfile:
+        fieldnames = ['source', 'nombre_requete_source', 'destination', 'nombre_visites_destination']
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+        
+        writer.writeheader()
+        
+        # Écrire les sources et leurs visites
+        for source, count in visites_sources.items():
+            writer.writerow({'source': source, 'nombre_requete_source': count})
+        
+        # Écrire les destinations et leurs visites
+        for destination, count in visites_destinations.items():
+            writer.writerow({'destination': destination, 'nombre_visites_destination': count})
 
 def main():
     # Afficher le répertoire de travail actuel
@@ -104,42 +150,39 @@ def main():
     # Lire le fichier et obtenir les lignes
     lignes = lire_fichier(file_path)
     
-    # Extraire les informations des lignes lues
-    informations = extraire_informations(lignes)
+    # Filtrer les lignes et écrire dans un nouveau fichier texte
+    lignes_filtrees = filtrer_lignes(lignes)
+    resume_file_path = "Projet/tcpdump_resume.txt"
+    ecrire_fichier(resume_file_path, lignes_filtrees)
+    
+    # Lire le fichier résumé et obtenir les lignes
+    lignes_resume = lire_fichier(resume_file_path)
+    
+    # Extraire les informations des lignes filtrées
+    informations = extraire_informations(lignes_resume)
     
     # Enregistrer les informations extraites dans un fichier CSV
     csv_file_path = "Projet/informations_extraites.csv"
     enregistrer_informations_csv(informations, csv_file_path)
     
-    # Compter les accès des adresses IP aux sites web et les visites par site web
-    acces, visites_site_web = compter_acces(informations)
+    # Compter les visites des sources et des destinations
+    visites_sources, visites_destinations = compter_visites(informations)
     
-    # Afficher les informations extraites
-    print("Informations extraites :")
-    for info in informations:
-        print(info)
+    # Afficher les visites des sources par ordre croissant, avec 100 visites ou plus
+    print("\nRequêtes des sources (100 ou plus) :")
+    for source, count in sorted(visites_sources.items(), key=lambda item: item[1]):
+        if count >= 100:
+            print(f"{source} : {count} requêtes")
     
-    # Afficher tous les accès des adresses IP aux sites web
-    print("\nTous les accès des adresses IP aux sites web :")
-    for (ip, site), count in acces.items():
-        print(f"{ip} accède à {site} : {count} fois")
+    # Afficher les visites des destinations par ordre croissant, avec 100 visites ou plus
+    print("\nVisites des destinations (100 visites ou plus) :")
+    for destination, count in sorted(visites_destinations.items(), key=lambda item: item[1]):
+        if count >= 100:
+            print(f"{destination} : {count} visites")
     
-    # Afficher le nombre de visites par site web
-    print("\nNombre de visites par site web :")
-    for site, count in visites_site_web.items():
-        print(f"{site} : {count} visites")
-    
-    # Afficher les accès des adresses IP aux sites web avec un nombre supérieur ou égal à 50
-    print("\nAccès des adresses IP aux sites web (50 fois ou plus) :")
-    for (ip, site), count in sorted(acces.items(), key=lambda item: item[1]):
-        if count >= 50:
-            print(f"{ip} accède à {site} : {count} fois")
-    
-    # Afficher les sites web visités 50 fois ou plus, sans adresse IP associée
-    print("\nSites web visités (50 fois ou plus, sans adresse IP associée) :")
-    for site, count in sorted(visites_site_web.items(), key=lambda item: item[1]):
-        if count >= 50 and not any(ip == site for ip, _ in acces.keys()):
-            print(f"{site} : {count} visites")
+    # Enregistrer les visites des sources et des destinations dans un fichier CSV
+    visites_csv_file_path = "Projet/nombre_requetes.csv"
+    enregistrer_visites_csv(visites_sources, visites_destinations, visites_csv_file_path)
 
 # Point d'entrée du programme
 if __name__ == "__main__":
