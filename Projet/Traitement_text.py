@@ -9,6 +9,7 @@ import re
 import os
 import csv
 from collections import defaultdict
+from Conversion_page_web import *
 
 def lire_fichier(file_path):
     """
@@ -140,49 +141,62 @@ def enregistrer_visites_csv(visites_sources, visites_destinations, file_path):
         for destination, count in visites_destinations.items():
             writer.writerow({'destination': destination, 'nombre_visites_destination': count})
 
+def compter_trames(file_path):
+    """
+    Compte le nombre de trames (lignes) dans un fichier texte.
+    
+    :param file_path: Le chemin du fichier texte
+    :return: Nombre de trames (lignes)
+    """
+    try:
+        with open(file_path, 'r', encoding='utf-8') as file:
+            lignes = file.readlines()
+        return len(lignes)
+    except FileNotFoundError:
+        print(f"Erreur: Le fichier '{file_path}' n'a pas été trouvé.")
+        return 0
+    except IOError:
+        print(f"Erreur: Impossible de lire le fichier '{file_path}'.")
+        return 0
+
 def main():
     # Afficher le répertoire de travail actuel
     print("Répertoire de travail actuel :", os.getcwd())
 
     # Définir le chemin du fichier texte
-    file_path = "Projet/tcpdump.txt"  # Utiliser un chemin relatif
+    file_path = "Projet/tcpdump.txt"
     
     # Lire le fichier et obtenir les lignes
     lignes = lire_fichier(file_path)
     
-    # Filtrer les lignes et écrire dans un nouveau fichier texte
+    # Filtrer les lignes et écrire dans tcpdump_resume.txt
     lignes_filtrees = filtrer_lignes(lignes)
     resume_file_path = "Projet/tcpdump_resume.txt"
     ecrire_fichier(resume_file_path, lignes_filtrees)
     
-    # Lire le fichier résumé et obtenir les lignes
+    # Lire tcpdump_resume.txt et obtenir les lignes
     lignes_resume = lire_fichier(resume_file_path)
     
     # Extraire les informations des lignes filtrées
     informations = extraire_informations(lignes_resume)
     
-    # Enregistrer les informations extraites dans un fichier CSV
+    # Enregistrer les informations extraites dans informations_extraites.csv
     csv_file_path = "Projet/informations_extraites.csv"
     enregistrer_informations_csv(informations, csv_file_path)
     
     # Compter les visites des sources et des destinations
     visites_sources, visites_destinations = compter_visites(informations)
     
-    # Afficher les visites des sources par ordre croissant, avec 100 visites ou plus
-    print("\nRequêtes des sources (100 ou plus) :")
-    for source, count in sorted(visites_sources.items(), key=lambda item: item[1]):
-        if count >= 100:
-            print(f"{source} : {count} requêtes")
+    # Compter le nombre de trames
+    nombre_trames = compter_trames(resume_file_path)
     
-    # Afficher les visites des destinations par ordre croissant, avec 100 visites ou plus
-    print("\nVisites des destinations (100 visites ou plus) :")
-    for destination, count in sorted(visites_destinations.items(), key=lambda item: item[1]):
-        if count >= 100:
-            print(f"{destination} : {count} visites")
+    # Enregistrer les résultats pertinents dans résultats_pertinents.md
+    resultats_md_file_path = "Projet/résultats_pertinents.md"
+    enregistrer_resultats_markdown(visites_sources, visites_destinations, resultats_md_file_path, nombre_trames)
     
-    # Enregistrer les visites des sources et des destinations dans un fichier CSV
-    visites_csv_file_path = "Projet/nombre_requetes.csv"
-    enregistrer_visites_csv(visites_sources, visites_destinations, visites_csv_file_path)
+    # Créer une page HTML à partir du fichier Markdown
+    html_file_path = "Projet/affichage_résultats.html"
+    creer_page_html_depuis_markdown(resultats_md_file_path, html_file_path)
 
 # Point d'entrée du programme
 if __name__ == "__main__":
