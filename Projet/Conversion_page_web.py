@@ -11,7 +11,7 @@ def enregistrer_resultats_markdown(visites_sources, visites_destinations, file_p
     :param nombre_trames: Nombre total de trames
     """
     with open(file_path, 'w', encoding='utf-8') as mdfile:
-        mdfile.write("# Résultats Pertinents\n\n")
+        mdfile.write("#  Analyse du tcpdump :\n\n")
         
         # Afficher le nombre de trames
         mdfile.write(f"## Nombre de trames : {nombre_trames}\n\n")
@@ -21,17 +21,6 @@ def enregistrer_resultats_markdown(visites_sources, visites_destinations, file_p
         for source, count in sorted(visites_sources.items(), key=lambda item: item[1]):
             mdfile.write(f"- **{source}** : {count} requêtes\n")
         
-        # Afficher les sources avec 100 requêtes ou plus
-        mdfile.write("\n## Sources avec 100 requêtes ou plus\n")
-        for source, count in sorted(visites_sources.items(), key=lambda item: item[1]):
-            if count >= 100:
-                mdfile.write(f"- **{source}** : {count} requêtes\n")
-        
-        # Afficher les destinations avec 100 visites ou plus
-        mdfile.write("\n## Destinations avec 100 visites ou plus\n")
-        for destination, count in sorted(visites_destinations.items(), key=lambda item: item[1]):
-            if count >= 100:
-                mdfile.write(f"- **{destination}** : {count} visites\n")
         
         # Afficher l'activité suspecte
         mdfile.write("\n## Activité suspecte\n")

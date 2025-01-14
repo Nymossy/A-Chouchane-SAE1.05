@@ -161,7 +161,7 @@ def compter_trames(file_path):
 
 def main():
     # Afficher le répertoire de travail actuel
-    print("Répertoire de travail actuel :", os.getcwd())
+    print("Répertoire de travail actuel :", os.getcwd(), "\n")
 
     # Définir le chemin du fichier texte
     file_path = "Projet/tcpdump.txt"
@@ -186,6 +186,19 @@ def main():
     
     # Compter les visites des sources et des destinations
     visites_sources, visites_destinations = compter_visites(informations)
+    
+   # Afficher les sources avec 100 visites ou plus par ordre croissant
+    print("Sources avec 100 requêtes ou plus (par ordre croissant) :")
+    for source, count in sorted(visites_sources.items(), key=lambda item: item[1]):
+        if count >= 100:
+            print(f"{source}: {count} visites")
+
+    print("\n")
+    # Afficher les destinations avec 100 visites ou plus par ordre croissant
+    print("Destinations avec 100 visites ou plus (par ordre croissant) :")
+    for destination, count in sorted(visites_destinations.items(), key=lambda item: item[1]):
+        if count >= 100:
+            print(f"{destination}: {count} visites")    
     
     # Compter le nombre de trames
     nombre_trames = compter_trames(resume_file_path)

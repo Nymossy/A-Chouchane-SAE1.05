@@ -1,4 +1,4 @@
-# Résultats Pertinents
+#  Analyse du tcpdump :
 
 ## Nombre de trames : 11017
 
@@ -25,20 +25,6 @@
 - **190-0-175-100.gba.solunet.com.ar** : 2000 requêtes
 - **www.aggloroanne.fr.https** : 2130 requêtes
 - **BP-Linux8** : 3093 requêtes
-
-## Sources avec 100 requêtes ou plus
-- **mauves.univ-st-etienne.fr.https** : 1687 requêtes
-- **par.1e100** : 1835 requêtes
-- **190-0-175-100.gba.solunet.com.ar** : 2000 requêtes
-- **www.aggloroanne.fr.https** : 2130 requêtes
-- **BP-Linux8** : 3093 requêtes
-
-## Destinations avec 100 visites ou plus
-- **mauves.univ-st-etienne.fr.https** : 751 visites
-- **www.aggloroanne.fr.https** : 1022 visites
-- **par.1e100** : 1052 visites
-- **184.107.43.74.http** : 2000 visites
-- **BP-Linux8** : 5923 visites
 
 ## Activité suspecte
 - **190-0-175-100.gba.solunet.com.ar** : 2000 requêtes
