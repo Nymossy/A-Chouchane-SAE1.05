@@ -174,7 +174,7 @@ ___Nombre de trames :___ {compteur}
 ## ___Activité Suspecte :___
 ''' + '\n'.join(f'- {ip} : {occurrences} requêtes' for ip, occurrences in suspect.items()) + f'''
 
-<img src="Projet/Activité-suspect.png" class="merge" />
+<img src="Activité-suspect.png" class="merge" />
 ## ___Protocol + Stats :___ 
 - SSH: {ssh}
 - HTTP: {http_final}

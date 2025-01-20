@@ -86,7 +86,7 @@ ___Nombre de trames :___ 10850
 - 184.107.43 : 2000 requêtes
 - BP-Linux8 : 2950 requêtes
 
-<img src="Projet/Activité-suspect.png" class="merge" />
+<img src="Activité-suspect.png" class="merge" />
 ## ___Protocol + Stats :___ 
 - SSH: 126
 - HTTP: 2096
