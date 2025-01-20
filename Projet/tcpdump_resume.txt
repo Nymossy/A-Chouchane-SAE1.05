@@ -6,12 +6,8 @@
 11:42:04.785384 IP 192.168.190.130.50019 > BP-Linux8.ssh: Flags [.], ack 144, win 7318, options [nop,nop,TS val 377953205 ecr 102917262], length 0
 11:42:04.785406 IP 192.168.190.130.50019 > BP-Linux8.ssh: Flags [.], ack 252, win 7316, options [nop,nop,TS val 377953205 ecr 102917262], length 0
 11:42:04.785454 IP 192.168.190.130.50019 > BP-Linux8.ssh: Flags [.], ack 288, win 7320, options [nop,nop,TS val 377953205 ecr 102917262], length 0
-11:42:05.768334 IP BP-Linux8.58466 > ns1.lan.rt.domain: 16550+ PTR? 130.190.168.192.in-addr.arpa. (46)
-11:42:05.769075 IP ns1.lan.rt.domain > BP-Linux8.58466: 16550 NXDomain 0/1/0 (112)
 11:42:06.669393 IP 192.168.190.130.50245 > BP-Linux8.ssh: Flags [P.], seq 1601828178:1601828214, ack 1851233244, win 2048, options [nop,nop,TS val 377955086 ecr 102913805], length 36
 11:42:06.669906 IP BP-Linux8.ssh > 192.168.190.130.50245: Flags [P.], seq 1:37, ack 36, win 291, options [nop,nop,TS val 102917738 ecr 377955086], length 36
-11:42:06.679262 IP BP-Linux8.53220 > ns1.lan.rt.domain: 54801+ A? lacampora.org. (31)
-11:42:06.679971 IP ns1.lan.rt.domain > BP-Linux8.53220: 54801 1/0/0 A 184.107.43.74 (47)
 11:42:06.681188 IP BP-Linux8.ssh > 192.168.190.130.50245: Flags [P.], seq 37:153, ack 36, win 291, options [nop,nop,TS val 102917741 ecr 377955086], length 116
 11:42:06.681222 IP BP-Linux8.ssh > 192.168.190.130.50245: Flags [P.], seq 153:189, ack 36, win 291, options [nop,nop,TS val 102917741 ecr 377955086], length 36
 11:42:06.681248 IP 190-0-175-100.gba.solunet.com.ar.2465 > 184.107.43.74.http: Flags [S], seq 326991629:326991749, win 512, length 120: HTTP
@@ -690,7 +686,6 @@
 11:42:06.692692 IP 190-0-175-100.gba.solunet.com.ar.3137 > 184.107.43.74.http: Flags [S], seq 1423512413:1423512533, win 512, length 120: HTTP
 11:42:06.692708 IP 190-0-175-100.gba.solunet.com.ar.3138 > 184.107.43.74.http: Flags [S], seq 782669691:782669811, win 512, length 120: HTTP
 11:42:06.692723 IP 190-0-175-100.gba.solunet.com.ar.3139 > 184.107.43.74.http: Flags [S], seq 1711057485:1711057605, win 512, length 120: HTTP
-11:42:06.692829 IP BP-Linux8.46650 > ns1.lan.rt.domain: 35807+ PTR? 12.250.250.10.in-addr.arpa. (44)
 11:42:06.692857 IP 190-0-175-100.gba.solunet.com.ar.3140 > 184.107.43.74.http: Flags [S], seq 275877443:275877563, win 512, length 120: HTTP
 11:42:06.692875 IP 190-0-175-100.gba.solunet.com.ar.3141 > 184.107.43.74.http: Flags [S], seq 1336665443:1336665563, win 512, length 120: HTTP
 11:42:06.692891 IP 190-0-175-100.gba.solunet.com.ar.3142 > 184.107.43.74.http: Flags [S], seq 1917185684:1917185804, win 512, length 120: HTTP
@@ -738,8 +733,6 @@
 11:42:06.693460 IP 190-0-175-100.gba.solunet.com.ar.3184 > 184.107.43.74.http: Flags [S], seq 1856253710:1856253830, win 512, length 120: HTTP
 11:42:06.693474 IP 190-0-175-100.gba.solunet.com.ar.3185 > 184.107.43.74.http: Flags [S], seq 424106104:424106224, win 512, length 120: HTTP
 11:42:06.693487 IP 190-0-175-100.gba.solunet.com.ar.3186 > 184.107.43.74.http: Flags [S], seq 825835539:825835659, win 512, length 120: HTTP
-11:42:06.693506 IP ns1.lan.rt.domain > BP-Linux8.46650: 35807* 1/0/0 PTR ns1.lan.rt. (68)
-11:42:06.693759 IP BP-Linux8.56227 > ns1.lan.rt.domain: 64622+ PTR? 74.43.107.184.in-addr.arpa. (44)
 11:42:06.693966 IP 190-0-175-100.gba.solunet.com.ar.3187 > 184.107.43.74.http: Flags [S], seq 795205669:795205789, win 512, length 120: HTTP
 11:42:06.693993 IP 190-0-175-100.gba.solunet.com.ar.3188 > 184.107.43.74.http: Flags [S], seq 1218476733:1218476853, win 512, length 120: HTTP
 11:42:06.694011 IP 190-0-175-100.gba.solunet.com.ar.3189 > 184.107.43.74.http: Flags [S], seq 225454617:225454737, win 512, length 120: HTTP
@@ -2026,26 +2019,11 @@
 11:42:06.729380 IP 192.168.190.130.50245 > BP-Linux8.ssh: Flags [.], ack 225, win 2047, options [nop,nop,TS val 377955145 ecr 102917748], length 0
 11:42:06.729446 IP 192.168.190.130.50245 > BP-Linux8.ssh: Flags [.], ack 585, win 2041, options [nop,nop,TS val 377955145 ecr 102917748], length 0
 11:42:06.729466 IP 192.168.190.130.50245 > BP-Linux8.ssh: Flags [.], ack 653, win 2046, options [nop,nop,TS val 377955145 ecr 102917748], length 0
-11:42:06.905547 IP ns1.lan.rt.domain > BP-Linux8.56227: 64622 NXDomain 0/0/0 (44)
-11:42:06.905695 IP BP-Linux8.53459 > ns1.lan.rt.domain: 37843+ PTR? 100.175.0.190.in-addr.arpa. (44)
-11:42:06.906293 IP ns1.lan.rt.domain > BP-Linux8.53459: 37843 1/0/0 PTR 190-0-175-100.gba.solunet.com.ar. (90)
 11:42:08.164737 IP BP-Linux8.37231 > par21s05-in-f131.1e100.net.http: Flags [.], ack 2940722356, win 294, options [nop,nop,TS val 102918112 ecr 607592418], length 0
 11:42:08.176439 IP par21s05-in-f131.1e100.net.http > BP-Linux8.37231: Flags [.], ack 1, win 282, options [nop,nop,TS val 607602434 ecr 102908100], length 0
-11:42:08.951962 IP BP-Linux8.41157 > ns1.lan.rt.domain: 17196+ PTR? 131.204.58.216.in-addr.arpa. (45)
-11:42:08.979914 IP ns1.lan.rt.domain > BP-Linux8.41157: 17196 2/0/0 PTR par21s05-in-f131.1e100.net., PTR par21s05-in-f3.1e100.net. (114)
-11:42:09.493812 IP BP-Linux8.55545 > ns1.lan.rt.domain: 307+ A? detectportal.firefox.com. (42)
-11:42:09.493827 IP BP-Linux8.55545 > ns1.lan.rt.domain: 8752+ AAAA? detectportal.firefox.com. (42)
-11:42:09.494769 IP ns1.lan.rt.domain > BP-Linux8.55545: 307 3/0/0 CNAME detectportal.prod.mozaws.net., CNAME prod.detectportal.prod.cloudops.mozgcp.net., A 34.107.221.82 (153)
-11:42:09.494858 IP ns1.lan.rt.domain > BP-Linux8.55545: 8752 3/0/0 CNAME detectportal.prod.mozaws.net., CNAME prod.detectportal.prod.cloudops.mozgcp.net., AAAA 2600:1901:0:38d7:: (165)
 11:42:09.501517 IP BP-Linux8.43717 > 82.221.107.34.bc.googleusercontent.com.http: Flags [P.], seq 4293264759:4293265045, ack 1840127120, win 237, options [nop,nop,TS val 102918446 ecr 4121903862], length 286: HTTP: GET /success.txt HTTP/1.1
 11:42:09.513726 IP 82.221.107.34.bc.googleusercontent.com.http > BP-Linux8.43717: Flags [P.], seq 1:221, ack 286, win 265, options [nop,nop,TS val 4121913807 ecr 102918446], length 220: HTTP: HTTP/1.1 200 OK
 11:42:09.513738 IP BP-Linux8.43717 > 82.221.107.34.bc.googleusercontent.com.http: Flags [.], ack 221, win 245, options [nop,nop,TS val 102918449 ecr 4121913807], length 0
-11:42:09.981307 IP BP-Linux8.55067 > ns1.lan.rt.domain: 62587+ PTR? 82.221.107.34.in-addr.arpa. (44)
-11:42:10.019062 IP ns1.lan.rt.domain > BP-Linux8.55067: 62587 1/0/0 PTR 82.221.107.34.bc.googleusercontent.com. (96)
-11:42:10.312228 IP BP-Linux8.52500 > ns1.lan.rt.domain: 34030+ A? aus5.mozilla.org. (34)
-11:42:10.312245 IP BP-Linux8.52500 > ns1.lan.rt.domain: 35259+ AAAA? aus5.mozilla.org. (34)
-11:42:10.317950 IP ns1.lan.rt.domain > BP-Linux8.52500: 34030 3/0/0 CNAME balrog-aus5.r53-2.services.mozilla.com., CNAME prod.balrog.prod.cloudops.mozgcp.net., A 35.244.181.201 (152)
-11:42:10.341873 IP ns1.lan.rt.domain > BP-Linux8.52500: 35259 2/0/0 CNAME balrog-aus5.r53-2.services.mozilla.com., CNAME prod.balrog.prod.cloudops.mozgcp.net. (136)
 11:42:10.342134 IP BP-Linux8.42539 > 201.181.244.35.bc.googleusercontent.com.https: Flags [S], seq 3793353133, win 29200, options [mss 1460,sackOK,TS val 102918656 ecr 0,nop,wscale 7], length 0
 11:42:10.354085 IP 201.181.244.35.bc.googleusercontent.com.https > BP-Linux8.42539: Flags [S.], seq 3706119793, ack 3793353134, win 65535, options [mss 1430,sackOK,TS val 3540590019 ecr 102918656,nop,wscale 8], length 0
 11:42:10.354101 IP BP-Linux8.42539 > 201.181.244.35.bc.googleusercontent.com.https: Flags [.], ack 1, win 229, options [nop,nop,TS val 102918659 ecr 3540590019], length 0
@@ -2080,10 +2058,6 @@
 11:42:10.564975 IP BP-Linux8.42539 > 201.181.244.35.bc.googleusercontent.com.https: Flags [.], ack 4833, win 362, options [nop,nop,TS val 102918712 ecr 3540590229], length 0
 11:42:10.565140 IP BP-Linux8.42539 > 201.181.244.35.bc.googleusercontent.com.https: Flags [P.], seq 953:999, ack 4833, win 362, options [nop,nop,TS val 102918712 ecr 3540590229], length 46
 11:42:10.577129 IP 201.181.244.35.bc.googleusercontent.com.https > BP-Linux8.42539: Flags [.], ack 999, win 269, options [nop,nop,TS val 3540590241 ecr 102918712], length 0
-11:42:11.020522 IP BP-Linux8.35281 > ns1.lan.rt.domain: 19053+ PTR? 201.181.244.35.in-addr.arpa. (45)
-11:42:11.117335 IP ns1.lan.rt.domain > BP-Linux8.35281: 19053 1/0/0 PTR 201.181.244.35.bc.googleusercontent.com. (98)
-11:42:11.118014 IP BP-Linux8.46102 > ns1.lan.rt.domain: 41113+ PTR? 29.220.184.93.in-addr.arpa. (44)
-11:42:11.137985 IP ns1.lan.rt.domain > BP-Linux8.46102: 41113 NXDomain 0/1/0 (115)
 11:42:11.236729 IP BP-Linux8.42612 > server-54-230-114-7.mrs52.r.cloudfront.net.https: Flags [.], ack 3822724508, win 341, options [nop,nop,TS val 102918880 ecr 4110808148], length 0
 11:42:11.243135 IP server-54-230-114-7.mrs52.r.cloudfront.net.https > BP-Linux8.42612: Flags [.], ack 1, win 7, options [nop,nop,TS val 4110818164 ecr 102903856], length 0
 11:42:11.425428 IP 192.168.190.130.50245 > BP-Linux8.ssh: Flags [P.], seq 36:80, ack 653, win 2048, options [nop,nop,TS val 377959819 ecr 102917748], length 44
@@ -2092,8 +2066,6 @@
 11:42:11.613339 IP 192.168.190.130.50245 > BP-Linux8.ssh: Flags [P.], seq 80:124, ack 769, win 2048, options [nop,nop,TS val 377960009 ecr 102918927], length 44
 11:42:11.613471 IP BP-Linux8.ssh > 192.168.190.130.50245: Flags [P.], seq 769:989, ack 124, win 291, options [nop,nop,TS val 102918974 ecr 377960009], length 220
 11:42:11.633335 IP 192.168.190.130.50245 > BP-Linux8.ssh: Flags [.], ack 989, win 2044, options [nop,nop,TS val 377960026 ecr 102918974], length 0
-11:42:12.139884 IP BP-Linux8.58089 > ns1.lan.rt.domain: 46008+ PTR? 7.114.230.54.in-addr.arpa. (43)
-11:42:12.173118 IP ns1.lan.rt.domain > BP-Linux8.58089: 46008 1/0/0 PTR server-54-230-114-7.mrs52.r.cloudfront.net. (99)
 11:42:12.641363 IP ec2-35-166-112-194.us-west-2.compute.amazonaws.com.https > BP-Linux8.48702: Flags [P.], seq 2457368095:2457368126, ack 2544627891, win 123, options [nop,nop,TS val 1975406714 ecr 102904008], length 31
 11:42:12.641546 IP BP-Linux8.48702 > ec2-35-166-112-194.us-west-2.compute.amazonaws.com.https: Flags [F.], seq 1, ack 31, win 319, options [nop,nop,TS val 102919231 ecr 1975406714], length 0
 11:42:12.685378 IP 192.168.190.130.50245 > BP-Linux8.ssh: Flags [P.], seq 124:160, ack 989, win 2048, options [nop,nop,TS val 377961076 ecr 102918974], length 36
@@ -2105,7 +2077,6 @@
 11:42:12.689741 IP BP-Linux8.ssh > 192.168.190.130.50245: Flags [P.], seq 1153:1253, ack 160, win 291, options [nop,nop,TS val 102919243 ecr 377961076], length 100
 11:42:12.689769 IP BP-Linux8.ssh > 192.168.190.130.50245: Flags [P.], seq 1253:1289, ack 160, win 291, options [nop,nop,TS val 102919243 ecr 377961076], length 36
 11:42:12.705320 IP 192.168.190.130.50245 > BP-Linux8.ssh: Flags [.], ack 1025, win 2047, options [nop,nop,TS val 377961096 ecr 102919242], length 0
-11:42:12.705471 IP BP-Linux8.50542 > ns1.lan.rt.domain: 45982+ PTR? 194.112.166.35.in-addr.arpa. (45)
 11:42:12.708725 IP BP-Linux8.51712 > server-54-230-114-73.mrs52.r.cloudfront.net.https: Flags [.], ack 4195674092, win 3715, options [nop,nop,TS val 102919248 ecr 36590409], length 0
 11:42:12.709305 IP 192.168.190.130.50245 > BP-Linux8.ssh: Flags [.], ack 1117, win 2046, options [nop,nop,TS val 377961099 ecr 102919243], length 0
 11:42:12.709323 IP 192.168.190.130.50245 > BP-Linux8.ssh: Flags [.], ack 1153, win 2046, options [nop,nop,TS val 377961099 ecr 102919243], length 0
@@ -2114,9 +2085,6 @@
 11:42:12.715072 IP server-54-230-114-73.mrs52.r.cloudfront.net.https > BP-Linux8.51712: Flags [.], ack 1, win 12, options [nop,nop,TS val 36600425 ecr 102904225], length 0
 11:42:12.726330 IP ec2-34-211-70-226.us-west-2.compute.amazonaws.com.https > BP-Linux8.54473: Flags [P.], seq 3244240218:3244240249, ack 2597773766, win 114, options [nop,nop,TS val 615318984 ecr 102904194], length 31
 11:42:12.726464 IP BP-Linux8.54473 > ec2-34-211-70-226.us-west-2.compute.amazonaws.com.https: Flags [F.], seq 1, ack 31, win 312, options [nop,nop,TS val 102919252 ecr 615318984], length 0
-11:42:12.756150 IP ns1.lan.rt.domain > BP-Linux8.50542: 45982 1/0/0 PTR ec2-35-166-112-194.us-west-2.compute.amazonaws.com. (109)
-11:42:12.756373 IP BP-Linux8.39368 > ns1.lan.rt.domain: 1029+ PTR? 1.115.168.192.in-addr.arpa. (44)
-11:42:12.756926 IP ns1.lan.rt.domain > BP-Linux8.39368: 1029 NXDomain 0/1/0 (110)
 11:42:12.820101 IP ec2-35-166-112-194.us-west-2.compute.amazonaws.com.https > BP-Linux8.48702: Flags [F.], seq 31, ack 2, win 123, options [nop,nop,TS val 1975406892 ecr 102919231], length 0
 11:42:12.820113 IP BP-Linux8.48702 > ec2-35-166-112-194.us-west-2.compute.amazonaws.com.https: Flags [.], ack 32, win 319, options [nop,nop,TS val 102919275 ecr 1975406892], length 0
 11:42:12.904414 IP ec2-34-211-70-226.us-west-2.compute.amazonaws.com.https > BP-Linux8.54473: Flags [F.], seq 31, ack 2, win 114, options [nop,nop,TS val 615319163 ecr 102919252], length 0
@@ -2129,12 +2097,6 @@
 11:42:13.688876 IP 192.168.115.1 > BP-Linux8: ICMP echo reply, id 27625, seq 2, length 64
 11:42:13.688952 IP BP-Linux8.ssh > 192.168.190.130.50245: Flags [P.], seq 1289:1389, ack 160, win 291, options [nop,nop,TS val 102919493 ecr 377961099], length 100
 11:42:13.709324 IP 192.168.190.130.50245 > BP-Linux8.ssh: Flags [.], ack 1389, win 2046, options [nop,nop,TS val 377962094 ecr 102919493], length 0
-11:42:13.709492 IP BP-Linux8.55923 > ns1.lan.rt.domain: 11066+ PTR? 73.114.230.54.in-addr.arpa. (44)
-11:42:13.737055 IP ns1.lan.rt.domain > BP-Linux8.55923: 11066 1/0/0 PTR server-54-230-114-73.mrs52.r.cloudfront.net. (101)
-11:42:13.737200 IP BP-Linux8.45779 > ns1.lan.rt.domain: 29684+ PTR? 226.70.211.34.in-addr.arpa. (44)
-11:42:13.780454 IP ns1.lan.rt.domain > BP-Linux8.45779: 29684 1/0/0 PTR ec2-34-211-70-226.us-west-2.compute.amazonaws.com. (107)
-11:42:13.780686 IP BP-Linux8.44425 > ns1.lan.rt.domain: 2526+ PTR? 122.114.230.54.in-addr.arpa. (45)
-11:42:13.807799 IP ns1.lan.rt.domain > BP-Linux8.44425: 2526 1/0/0 PTR server-54-230-114-122.mrs52.r.cloudfront.net. (103)
 11:42:14.688755 IP BP-Linux8 > 192.168.115.1: ICMP echo request, id 27625, seq 3, length 64
 11:42:14.688879 IP 192.168.115.1 > BP-Linux8: ICMP echo reply, id 27625, seq 3, length 64
 11:42:14.688957 IP BP-Linux8.ssh > 192.168.190.130.50245: Flags [P.], seq 1389:1489, ack 160, win 291, options [nop,nop,TS val 102919743 ecr 377962094], length 100
@@ -2175,11 +2137,7 @@
 11:42:21.724869 IP 192.168.115.1 > BP-Linux8: ICMP echo reply, id 27625, seq 10, length 64
 11:42:21.724950 IP BP-Linux8.ssh > 192.168.190.130.50245: Flags [P.], seq 2089:2189, ack 160, win 291, options [nop,nop,TS val 102921502 ecr 377969122], length 100
 11:42:21.745290 IP 192.168.190.130.50245 > BP-Linux8.ssh: Flags [.], ack 2189, win 2046, options [nop,nop,TS val 377970096 ecr 102921502], length 0
-11:42:22.301678 IP BP-Linux8.60493 > ns1.lan.rt.domain: 52447+ A? www.google.com. (32)
-11:42:22.301694 IP BP-Linux8.60493 > ns1.lan.rt.domain: 58389+ AAAA? www.google.com. (32)
-11:42:22.302602 IP ns1.lan.rt.domain > BP-Linux8.60493: 58389 1/0/0 AAAA 2a00:1450:4007:811::2004 (60)
 11:42:22.304574 IP BP-Linux8.41767 > par21s04-in-f4.1e100.net.https: Flags [P.], seq 3740838800:3740839048, ack 120638078, win 2946, options [nop,nop,TS val 102921646 ecr 2380190838], length 248
-11:42:22.306995 IP ns1.lan.rt.domain > BP-Linux8.60493: 52447 1/0/0 A 216.58.213.164 (48)
 11:42:22.316453 IP par21s04-in-f4.1e100.net.https > BP-Linux8.41767: Flags [.], ack 248, win 377, options [nop,nop,TS val 2380245261 ecr 102921646], length 0
 11:42:22.316927 IP BP-Linux8.41767 > par21s04-in-f4.1e100.net.https: Flags [P.], seq 248:1079, ack 1, win 2946, options [nop,nop,TS val 102921650 ecr 2380245261], length 831
 11:42:22.317039 IP BP-Linux8.41767 > par21s04-in-f4.1e100.net.https: Flags [P.], seq 1079:1117, ack 1, win 2946, options [nop,nop,TS val 102921650 ecr 2380245261], length 38
@@ -2194,10 +2152,6 @@
 11:42:22.339580 IP par21s04-in-f4.1e100.net.https > BP-Linux8.41767: Flags [P.], seq 845:883, ack 1117, win 388, options [nop,nop,TS val 2380245284 ecr 102921650], length 38
 11:42:22.339836 IP BP-Linux8.41767 > par21s04-in-f4.1e100.net.https: Flags [P.], seq 1117:1163, ack 883, win 2942, options [nop,nop,TS val 102921655 ecr 2380245283], length 46
 11:42:22.356524 IP par21s04-in-f4.1e100.net.https > BP-Linux8.41767: Flags [.], ack 1163, win 388, options [nop,nop,TS val 2380245301 ecr 102921655], length 0
-11:42:22.380854 IP BP-Linux8.53928 > ns1.lan.rt.domain: 35180+ A? www.google.fr. (31)
-11:42:22.380871 IP BP-Linux8.53928 > ns1.lan.rt.domain: 722+ AAAA? www.google.fr. (31)
-11:42:22.386390 IP ns1.lan.rt.domain > BP-Linux8.53928: 35180 1/0/0 A 172.217.18.195 (47)
-11:42:22.386558 IP ns1.lan.rt.domain > BP-Linux8.53928: 722 1/0/0 AAAA 2a00:1450:4007:805::2003 (59)
 11:42:22.386720 IP BP-Linux8.34862 > par10s38-in-f3.1e100.net.https: Flags [S], seq 2828725183, win 29200, options [mss 1460,sackOK,TS val 102921667 ecr 0,nop,wscale 7], length 0
 11:42:22.398666 IP par10s38-in-f3.1e100.net.https > BP-Linux8.34862: Flags [S.], seq 182367724, ack 2828725184, win 65535, options [mss 1430,sackOK,TS val 3186288228 ecr 102921667,nop,wscale 8], length 0
 11:42:22.398682 IP BP-Linux8.34862 > par10s38-in-f3.1e100.net.https: Flags [.], ack 1, win 229, options [nop,nop,TS val 102921670 ecr 3186288228], length 0
@@ -2446,7 +2400,6 @@
 11:42:22.621838 IP par10s38-in-f3.1e100.net.https > BP-Linux8.34862: Flags [.], seq 221779:223197, ack 1595, win 277, options [nop,nop,TS val 3186288451 ecr 102921722], length 1418
 11:42:22.621839 IP par10s38-in-f3.1e100.net.https > BP-Linux8.34862: Flags [.], seq 223197:224615, ack 1595, win 277, options [nop,nop,TS val 3186288451 ecr 102921722], length 1418
 11:42:22.621841 IP par10s38-in-f3.1e100.net.https > BP-Linux8.34862: Flags [P.], seq 224615:226033, ack 1595, win 277, options [nop,nop,TS val 3186288451 ecr 102921722], length 1418
-11:42:22.621910 IP BP-Linux8.49777 > ns1.lan.rt.domain: 4295+ PTR? 164.213.58.216.in-addr.arpa. (45)
 11:42:22.621952 IP BP-Linux8.34862 > par10s38-in-f3.1e100.net.https: Flags [.], ack 210435, win 2459, options [nop,nop,TS val 102921726 ecr 3186288450], length 0
 11:42:22.622062 IP BP-Linux8.34862 > par10s38-in-f3.1e100.net.https: Flags [.], ack 226033, win 2381, options [nop,nop,TS val 102921726 ecr 3186288450], length 0
 11:42:22.622620 IP par10s38-in-f3.1e100.net.https > BP-Linux8.34862: Flags [.], seq 226033:227451, ack 1595, win 277, options [nop,nop,TS val 3186288452 ecr 102921722], length 1418
@@ -2502,7 +2455,6 @@
 11:42:22.626822 IP par10s38-in-f3.1e100.net.https > BP-Linux8.34862: Flags [.], seq 295515:296933, ack 1595, win 277, options [nop,nop,TS val 3186288456 ecr 102921723], length 1418
 11:42:22.626824 IP par10s38-in-f3.1e100.net.https > BP-Linux8.34862: Flags [.], seq 296933:298351, ack 1595, win 277, options [nop,nop,TS val 3186288456 ecr 102921723], length 1418
 11:42:22.626825 IP par10s38-in-f3.1e100.net.https > BP-Linux8.34862: Flags [P.], seq 298351:299769, ack 1595, win 277, options [nop,nop,TS val 3186288456 ecr 102921723], length 1418
-11:42:22.627342 IP ns1.lan.rt.domain > BP-Linux8.49777: 4295 2/0/0 PTR par21s04-in-f4.1e100.net., PTR par21s04-in-f164.1e100.net. (114)
 11:42:22.627451 IP par10s38-in-f3.1e100.net.https > BP-Linux8.34862: Flags [.], seq 299769:301187, ack 1595, win 277, options [nop,nop,TS val 3186288457 ecr 102921724], length 1418
 11:42:22.627455 IP par10s38-in-f3.1e100.net.https > BP-Linux8.34862: Flags [.], seq 301187:302605, ack 1595, win 277, options [nop,nop,TS val 3186288457 ecr 102921724], length 1418
 11:42:22.627697 IP par10s38-in-f3.1e100.net.https > BP-Linux8.34862: Flags [.], seq 302605:304023, ack 1595, win 277, options [nop,nop,TS val 3186288457 ecr 102921724], length 1418
@@ -2516,7 +2468,6 @@
 11:42:22.627710 IP par10s38-in-f3.1e100.net.https > BP-Linux8.34862: Flags [.], seq 313949:315367, ack 1595, win 277, options [nop,nop,TS val 3186288457 ecr 102921724], length 1418
 11:42:22.627720 IP par10s38-in-f3.1e100.net.https > BP-Linux8.34862: Flags [.], seq 315367:316785, ack 1595, win 277, options [nop,nop,TS val 3186288457 ecr 102921724], length 1418
 11:42:22.627721 IP par10s38-in-f3.1e100.net.https > BP-Linux8.34862: Flags [P.], seq 316785:318203, ack 1595, win 277, options [nop,nop,TS val 3186288457 ecr 102921724], length 1418
-11:42:22.627951 IP BP-Linux8.60401 > ns1.lan.rt.domain: 28324+ PTR? 195.18.217.172.in-addr.arpa. (45)
 11:42:22.627980 IP BP-Linux8.34862 > par10s38-in-f3.1e100.net.https: Flags [.], ack 318203, win 1924, options [nop,nop,TS val 102921727 ecr 3186288455], length 0
 11:42:22.628433 IP par10s38-in-f3.1e100.net.https > BP-Linux8.34862: Flags [.], seq 318203:319621, ack 1595, win 277, options [nop,nop,TS val 3186288458 ecr 102921724], length 1418
 11:42:22.628650 IP par10s38-in-f3.1e100.net.https > BP-Linux8.34862: Flags [.], seq 319621:321039, ack 1595, win 277, options [nop,nop,TS val 3186288458 ecr 102921724], length 1418
@@ -2547,7 +2498,6 @@
 11:42:22.630174 IP par10s38-in-f3.1e100.net.https > BP-Linux8.34862: Flags [.], seq 350817:352235, ack 1595, win 277, options [nop,nop,TS val 3186288460 ecr 102921724], length 1418
 11:42:22.630178 IP par10s38-in-f3.1e100.net.https > BP-Linux8.34862: Flags [P.], seq 352235:352771, ack 1595, win 277, options [nop,nop,TS val 3186288460 ecr 102921724], length 536
 11:42:22.632747 IP BP-Linux8.34862 > par10s38-in-f3.1e100.net.https: Flags [.], ack 352771, win 1874, options [nop,nop,TS val 102921729 ecr 3186288460], length 0
-11:42:22.657020 IP ns1.lan.rt.domain > BP-Linux8.60401: 28324 2/0/0 PTR par10s38-in-f3.1e100.net., PTR ham02s14-in-f195.1e100.net. (114)
 11:42:22.720980 IP BP-Linux8.53440 > par21s23-in-f3.1e100.net.https: Flags [P.], seq 3092649507:3092649731, ack 1438053900, win 1312, options [nop,nop,TS val 102921751 ecr 2023315001], length 224
 11:42:22.724732 IP BP-Linux8.51712 > server-54-230-114-73.mrs52.r.cloudfront.net.https: Flags [.], ack 1, win 3715, options [nop,nop,TS val 102921752 ecr 36600425], length 0
 11:42:22.724764 IP BP-Linux8 > 192.168.115.1: ICMP echo request, id 27625, seq 11, length 64
@@ -2689,8 +2639,6 @@
 11:42:23.495193 IP BP-Linux8.34862 > par10s38-in-f3.1e100.net.https: Flags [.], ack 413466, win 2678, options [nop,nop,TS val 102921944 ecr 3186289325], length 0
 11:42:23.495237 IP BP-Linux8.34862 > par10s38-in-f3.1e100.net.https: Flags [P.], seq 3481:3527, ack 413466, win 2678, options [nop,nop,TS val 102921944 ecr 3186289325], length 46
 11:42:23.511993 IP par10s38-in-f3.1e100.net.https > BP-Linux8.34862: Flags [.], ack 3527, win 297, options [nop,nop,TS val 3186289342 ecr 102921944], length 0
-11:42:23.528310 IP BP-Linux8.50212 > ns1.lan.rt.domain: 2521+ PTR? 163.201.250.142.in-addr.arpa. (46)
-11:42:23.551525 IP ns1.lan.rt.domain > BP-Linux8.50212: 2521 1/0/0 PTR par21s23-in-f3.1e100.net. (84)
 11:42:23.705315 IP BP-Linux8.34862 > par10s38-in-f3.1e100.net.https: Flags [P.], seq 3527:4741, ack 413466, win 2678, options [nop,nop,TS val 102921997 ecr 3186289342], length 1214
 11:42:23.717176 IP par10s38-in-f3.1e100.net.https > BP-Linux8.34862: Flags [.], ack 4741, win 308, options [nop,nop,TS val 3186289547 ecr 102921997], length 0
 11:42:23.718124 IP par10s38-in-f3.1e100.net.https > BP-Linux8.34862: Flags [P.], seq 413466:413580, ack 4741, win 308, options [nop,nop,TS val 3186289548 ecr 102921997], length 114
@@ -2776,12 +2724,6 @@
 11:42:23.988916 IP BP-Linux8.35207 > lhr25s01-in-f2.1e100.net.https: Flags [.], ack 425, win 375, options [nop,nop,TS val 102922068 ecr 72064029], length 0
 11:42:23.988961 IP BP-Linux8.35207 > lhr25s01-in-f2.1e100.net.https: Flags [P.], seq 369:415, ack 425, win 375, options [nop,nop,TS val 102922068 ecr 72064029], length 46
 11:42:24.006442 IP lhr25s01-in-f2.1e100.net.https > BP-Linux8.35207: Flags [.], ack 415, win 282, options [nop,nop,TS val 72064047 ecr 102922068], length 0
-11:42:24.596294 IP BP-Linux8.57318 > ns1.lan.rt.domain: 57845+ PTR? 98.179.250.142.in-addr.arpa. (45)
-11:42:24.620452 IP ns1.lan.rt.domain > BP-Linux8.57318: 57845 1/0/0 PTR par21s20-in-f2.1e100.net. (83)
-11:42:24.621092 IP BP-Linux8.54335 > ns1.lan.rt.domain: 13137+ PTR? 162.201.250.142.in-addr.arpa. (46)
-11:42:24.643958 IP ns1.lan.rt.domain > BP-Linux8.54335: 13137 1/0/0 PTR par21s23-in-f2.1e100.net. (84)
-11:42:24.644263 IP BP-Linux8.38325 > ns1.lan.rt.domain: 46596+ PTR? 66.213.58.216.in-addr.arpa. (44)
-11:42:24.667876 IP ns1.lan.rt.domain > BP-Linux8.38325: 46596 3/0/0 PTR lhr25s01-in-f2.1e100.net., PTR lhr25s01-in-f66.1e100.net., PTR par21s18-in-f2.1e100.net. (141)
 11:42:24.724746 IP BP-Linux8 > 192.168.115.1: ICMP echo request, id 27625, seq 13, length 64
 11:42:24.724852 IP 192.168.115.1 > BP-Linux8: ICMP echo reply, id 27625, seq 13, length 64
 11:42:24.724918 IP BP-Linux8.ssh > 192.168.190.130.50245: Flags [P.], seq 2389:2489, ack 160, win 291, options [nop,nop,TS val 102922252 ecr 377972019], length 100
@@ -2836,8 +2778,6 @@
 11:42:25.200856 IP par10s38-in-f3.1e100.net.https > BP-Linux8.34862: Flags [.], ack 6204, win 346, options [nop,nop,TS val 3186291031 ecr 102922368], length 0
 11:42:25.205595 IP BP-Linux8.48896 > par21s11-in-f14.1e100.net.https: Flags [P.], seq 417:547, ack 3241, win 709, options [nop,nop,TS val 102922372 ecr 3967923156], length 130
 11:42:25.210053 IP BP-Linux8.48896 > par21s11-in-f14.1e100.net.https: Flags [P.], seq 547:677, ack 3241, win 709, options [nop,nop,TS val 102922373 ecr 3967923156], length 130
-11:42:25.217793 IP BP-Linux8.55609 > ns1.lan.rt.domain: 22176+ A? lh5.googleusercontent.com. (43)
-11:42:25.217808 IP BP-Linux8.55609 > ns1.lan.rt.domain: 25982+ AAAA? lh5.googleusercontent.com. (43)
 11:42:25.218207 IP par21s11-in-f14.1e100.net.https > BP-Linux8.48896: Flags [P.], seq 3241:3375, ack 547, win 282, options [nop,nop,TS val 3967923369 ecr 102922372], length 134
 11:42:25.218335 IP par21s11-in-f14.1e100.net.https > BP-Linux8.48896: Flags [P.], seq 3375:4793, ack 547, win 282, options [nop,nop,TS val 3967923369 ecr 102922372], length 1418
 11:42:25.218480 IP BP-Linux8.48896 > par21s11-in-f14.1e100.net.https: Flags [.], ack 4793, win 763, options [nop,nop,TS val 102922375 ecr 3967923369], length 0
@@ -2849,8 +2789,6 @@
 11:42:25.222771 IP par21s11-in-f14.1e100.net.https > BP-Linux8.48896: Flags [P.], seq 5483:6901, ack 677, win 286, options [nop,nop,TS val 3967923373 ecr 102922373], length 1418
 11:42:25.222795 IP BP-Linux8.48896 > par21s11-in-f14.1e100.net.https: Flags [.], ack 6901, win 849, options [nop,nop,TS val 102922376 ecr 3967923373], length 0
 11:42:25.223011 IP par21s11-in-f14.1e100.net.https > BP-Linux8.48896: Flags [P.], seq 6901:7525, ack 677, win 286, options [nop,nop,TS val 3967923373 ecr 102922373], length 624
-11:42:25.223374 IP ns1.lan.rt.domain > BP-Linux8.55609: 22176 2/0/0 CNAME googlehosted.l.googleusercontent.com., A 216.58.215.33 (88)
-11:42:25.223517 IP ns1.lan.rt.domain > BP-Linux8.55609: 25982 2/0/0 CNAME googlehosted.l.googleusercontent.com., AAAA 2a00:1450:4007:808::2001 (100)
 11:42:25.224137 IP BP-Linux8.53416 > par21s17-in-f1.1e100.net.https: Flags [S], seq 2442994735, win 29200, options [mss 1460,sackOK,TS val 102922376 ecr 0,nop,wscale 7], length 0
 11:42:25.228283 IP BP-Linux8.48896 > par21s11-in-f14.1e100.net.https: Flags [P.], seq 723:841, ack 7525, win 881, options [nop,nop,TS val 102922377 ecr 3967923373], length 118
 11:42:25.231979 IP BP-Linux8.53417 > par21s17-in-f1.1e100.net.https: Flags [S], seq 3919739769, win 29200, options [mss 1460,sackOK,TS val 102922378 ecr 0,nop,wscale 7], length 0
@@ -2897,8 +2835,6 @@
 11:42:25.255957 IP par21s17-in-f1.1e100.net.https > BP-Linux8.53417: Flags [.], ack 207, win 261, options [nop,nop,TS val 3571134119 ecr 102922381], length 0
 11:42:25.256193 IP par21s17-in-f1.1e100.net.https > BP-Linux8.53421: Flags [S.], seq 1230219794, ack 1270624601, win 65535, options [mss 1430,sackOK,TS val 410621900 ecr 102922381,nop,wscale 8], length 0
 11:42:25.256201 IP BP-Linux8.53421 > par21s17-in-f1.1e100.net.https: Flags [.], ack 1, win 229, options [nop,nop,TS val 102922384 ecr 410621900], length 0
-11:42:25.257204 IP BP-Linux8.47474 > ns1.lan.rt.domain: 58395+ A? ocsp.pki.goog. (31)
-11:42:25.257218 IP BP-Linux8.47474 > ns1.lan.rt.domain: 19908+ AAAA? ocsp.pki.goog. (31)
 11:42:25.258804 IP par21s11-in-f14.1e100.net.https > BP-Linux8.48896: Flags [.], ack 887, win 286, options [nop,nop,TS val 3967923409 ecr 102922381], length 0
 11:42:25.259358 IP par21s17-in-f1.1e100.net.https > BP-Linux8.53418: Flags [.], ack 207, win 261, options [nop,nop,TS val 3305137191 ecr 102922382], length 0
 11:42:25.260285 IP par21s17-in-f1.1e100.net.https > BP-Linux8.53417: Flags [.], seq 1:1419, ack 207, win 261, options [nop,nop,TS val 3571134123 ecr 102922381], length 1418
@@ -2914,8 +2850,6 @@
 11:42:25.260491 IP par21s17-in-f1.1e100.net.https > BP-Linux8.53417: Flags [P.], seq 7091:7412, ack 207, win 261, options [nop,nop,TS val 3571134123 ecr 102922381], length 321
 11:42:25.260493 IP BP-Linux8.53417 > par21s17-in-f1.1e100.net.https: Flags [.], ack 7412, win 364, options [nop,nop,TS val 102922385 ecr 3571134123], length 0
 11:42:25.260508 IP par21s17-in-f1.1e100.net.https > BP-Linux8.53419: Flags [.], ack 207, win 261, options [nop,nop,TS val 2569721436 ecr 102922382], length 0
-11:42:25.262780 IP ns1.lan.rt.domain > BP-Linux8.47474: 58395 2/0/0 CNAME pki-goog.l.google.com., A 216.58.204.131 (82)
-11:42:25.262957 IP ns1.lan.rt.domain > BP-Linux8.47474: 19908 2/0/0 CNAME pki-goog.l.google.com., AAAA 2a00:1450:4007:812::2003 (94)
 11:42:25.263326 IP par21s17-in-f1.1e100.net.https > BP-Linux8.53420: Flags [.], ack 207, win 261, options [nop,nop,TS val 1901708766 ecr 102922383], length 0
 11:42:25.263568 IP par21s17-in-f1.1e100.net.https > BP-Linux8.53418: Flags [.], seq 1:1419, ack 207, win 261, options [nop,nop,TS val 3305137195 ecr 102922382], length 1418
 11:42:25.263575 IP BP-Linux8.53418 > par21s17-in-f1.1e100.net.https: Flags [.], ack 1419, win 251, options [nop,nop,TS val 102922386 ecr 3305137195], length 0
@@ -3084,13 +3018,10 @@
 11:42:25.468833 IP par10s38-in-f3.1e100.net.https > BP-Linux8.34862: Flags [P.], seq 421510:421549, ack 6516, win 365, options [nop,nop,TS val 3186291298 ecr 102922426], length 39
 11:42:25.468961 IP par10s38-in-f3.1e100.net.https > BP-Linux8.34862: Flags [P.], seq 421549:421587, ack 6516, win 365, options [nop,nop,TS val 3186291299 ecr 102922426], length 38
 11:42:25.468964 IP par10s38-in-f3.1e100.net.https > BP-Linux8.34862: Flags [P.], seq 421587:421633, ack 6516, win 365, options [nop,nop,TS val 3186291299 ecr 102922426], length 46
-11:42:25.469481 IP BP-Linux8.35940 > ns1.lan.rt.domain: 43301+ PTR? 238.19.217.172.in-addr.arpa. (45)
 11:42:25.470522 IP BP-Linux8.34862 > par10s38-in-f3.1e100.net.https: Flags [.], ack 421633, win 2667, options [nop,nop,TS val 102922438 ecr 3186291295], length 0
 11:42:25.484730 IP BP-Linux8.37231 > par21s05-in-f131.1e100.net.http: Flags [.], ack 2107, win 327, options [nop,nop,TS val 102922442 ecr 607619703], length 0
 11:42:25.489595 IP BP-Linux8.34862 > par10s38-in-f3.1e100.net.https: Flags [P.], seq 6516:6562, ack 421633, win 2678, options [nop,nop,TS val 102922443 ecr 3186291295], length 46
 11:42:25.489772 IP BP-Linux8.53417 > par21s17-in-f1.1e100.net.https: Flags [P.], seq 695:733, ack 14621, win 521, options [nop,nop,TS val 102922443 ecr 3571134330], length 38
-11:42:25.492715 IP ns1.lan.rt.domain > BP-Linux8.35940: 43301 1/0/0 PTR par21s11-in-f14.1e100.net. (84)
-11:42:25.494450 IP BP-Linux8.37821 > ns1.lan.rt.domain: 62201+ PTR? 33.215.58.216.in-addr.arpa. (44)
 11:42:25.495140 IP BP-Linux8.53417 > par21s17-in-f1.1e100.net.https: Flags [P.], seq 733:779, ack 14621, win 521, options [nop,nop,TS val 102922444 ecr 3571134330], length 46
 11:42:25.495329 IP BP-Linux8.53418 > par21s17-in-f1.1e100.net.https: Flags [P.], seq 300:463, ack 7774, win 386, options [nop,nop,TS val 102922444 ecr 3305137258], length 163
 11:42:25.495371 IP BP-Linux8.53418 > par21s17-in-f1.1e100.net.https: Flags [P.], seq 463:696, ack 7774, win 386, options [nop,nop,TS val 102922444 ecr 3305137258], length 233
@@ -3119,7 +3050,6 @@
 11:42:25.521576 IP BP-Linux8.53419 > par21s17-in-f1.1e100.net.https: Flags [P.], seq 463:696, ack 7775, win 386, options [nop,nop,TS val 102922451 ecr 2569721523], length 233
 11:42:25.521763 IP BP-Linux8.53420 > par21s17-in-f1.1e100.net.https: Flags [P.], seq 300:463, ack 7774, win 386, options [nop,nop,TS val 102922451 ecr 1901708882], length 163
 11:42:25.521798 IP BP-Linux8.53420 > par21s17-in-f1.1e100.net.https: Flags [P.], seq 463:509, ack 7774, win 386, options [nop,nop,TS val 102922451 ecr 1901708882], length 46
-11:42:25.522938 IP ns1.lan.rt.domain > BP-Linux8.37821: 62201 1/0/0 PTR par21s17-in-f1.1e100.net. (82)
 11:42:25.527262 IP par21s17-in-f1.1e100.net.https > BP-Linux8.53417: Flags [.], ack 810, win 269, options [nop,nop,TS val 3571134390 ecr 102922449], length 0
 11:42:25.527267 IP par21s17-in-f1.1e100.net.https > BP-Linux8.53417: Flags [F.], seq 14621, ack 810, win 269, options [nop,nop,TS val 3571134390 ecr 102922449], length 0
 11:42:25.527271 IP BP-Linux8.53417 > par21s17-in-f1.1e100.net.https: Flags [.], ack 14622, win 521, options [nop,nop,TS val 102922452 ecr 3571134390], length 0
@@ -3367,9 +3297,6 @@
 11:42:26.409988 IP par10s38-in-f3.1e100.net.https > BP-Linux8.34862: Flags [.], ack 7843, win 422, options [nop,nop,TS val 3186292240 ecr 102922669], length 0
 11:42:26.471484 IP BP-Linux8.34862 > par10s38-in-f3.1e100.net.https: Flags [P.], seq 7843:8275, ack 428286, win 2678, options [nop,nop,TS val 102922688 ecr 3186292240], length 432
 11:42:26.483360 IP par10s38-in-f3.1e100.net.https > BP-Linux8.34862: Flags [.], ack 8275, win 431, options [nop,nop,TS val 3186292313 ecr 102922688], length 0
-11:42:26.507989 IP BP-Linux8.56201 > ns1.lan.rt.domain: 57715+ PTR? 142.178.250.142.in-addr.arpa. (46)
-11:42:26.531890 IP ns1.lan.rt.domain > BP-Linux8.56201: 57715 1/0/0 PTR par21s22-in-f14.1e100.net. (85)
-11:42:26.532047 IP BP-Linux8.46121 > ns1.lan.rt.domain: 41357+ PTR? 174.214.58.216.in-addr.arpa. (45)
 11:42:26.543681 IP par10s38-in-f3.1e100.net.https > BP-Linux8.34862: Flags [P.], seq 428286:428664, ack 8275, win 431, options [nop,nop,TS val 3186292373 ecr 102922688], length 378
 11:42:26.543875 IP par10s38-in-f3.1e100.net.https > BP-Linux8.34862: Flags [P.], seq 428664:430082, ack 8275, win 431, options [nop,nop,TS val 3186292373 ecr 102922688], length 1418
 11:42:26.543879 IP par10s38-in-f3.1e100.net.https > BP-Linux8.34862: Flags [.], seq 430082:431500, ack 8275, win 431, options [nop,nop,TS val 3186292373 ecr 102922688], length 1418
@@ -3392,17 +3319,12 @@
 11:42:26.551848 IP BP-Linux8.34862 > par10s38-in-f3.1e100.net.https: Flags [P.], seq 8650:8688, ack 445274, win 2678, options [nop,nop,TS val 102922708 ecr 3186292374], length 38
 11:42:26.563575 IP par10s38-in-f3.1e100.net.https > BP-Linux8.34862: Flags [.], ack 8650, win 441, options [nop,nop,TS val 3186292393 ecr 102922708], length 0
 11:42:26.564128 IP par10s38-in-f3.1e100.net.https > BP-Linux8.34862: Flags [.], ack 8688, win 441, options [nop,nop,TS val 3186292394 ecr 102922708], length 0
-11:42:26.564863 IP ns1.lan.rt.domain > BP-Linux8.46121: 41357 3/0/0 PTR mad01s26-in-f174.1e100.net., PTR mad01s26-in-f14.1e100.net., PTR par10s42-in-f14.1e100.net. (145)
-11:42:26.566304 IP BP-Linux8.45921 > ns1.lan.rt.domain: 46030+ PTR? 238.74.250.142.in-addr.arpa. (45)
 11:42:26.571786 IP par10s38-in-f3.1e100.net.https > BP-Linux8.34862: Flags [P.], seq 445274:445427, ack 8688, win 441, options [nop,nop,TS val 3186292401 ecr 102922708], length 153
 11:42:26.571904 IP par10s38-in-f3.1e100.net.https > BP-Linux8.34862: Flags [P.], seq 445427:445465, ack 8688, win 441, options [nop,nop,TS val 3186292401 ecr 102922708], length 38
 11:42:26.571908 IP par10s38-in-f3.1e100.net.https > BP-Linux8.34862: Flags [P.], seq 445465:445511, ack 8688, win 441, options [nop,nop,TS val 3186292402 ecr 102922708], length 46
 11:42:26.572003 IP BP-Linux8.34862 > par10s38-in-f3.1e100.net.https: Flags [.], ack 445511, win 2678, options [nop,nop,TS val 102922713 ecr 3186292401], length 0
 11:42:26.572049 IP BP-Linux8.34862 > par10s38-in-f3.1e100.net.https: Flags [P.], seq 8688:8734, ack 445511, win 2678, options [nop,nop,TS val 102922713 ecr 3186292401], length 46
 11:42:26.589035 IP par10s38-in-f3.1e100.net.https > BP-Linux8.34862: Flags [.], ack 8734, win 441, options [nop,nop,TS val 3186292419 ecr 102922713], length 0
-11:42:26.589104 IP ns1.lan.rt.domain > BP-Linux8.45921: 46030 1/0/0 PTR par10s40-in-f14.1e100.net. (84)
-11:42:26.589258 IP BP-Linux8.32826 > ns1.lan.rt.domain: 23214+ PTR? 142.22.217.172.in-addr.arpa. (45)
-11:42:26.612303 IP ns1.lan.rt.domain > BP-Linux8.32826: 23214 1/0/0 PTR par21s12-in-f14.1e100.net. (84)
 11:42:26.621082 IP BP-Linux8.34862 > par10s38-in-f3.1e100.net.https: Flags [P.], seq 8734:8850, ack 445511, win 2678, options [nop,nop,TS val 102922726 ecr 3186292419], length 116
 11:42:26.633344 IP par10s38-in-f3.1e100.net.https > BP-Linux8.34862: Flags [.], ack 8850, win 441, options [nop,nop,TS val 3186292463 ecr 102922726], length 0
 11:42:26.634175 IP par10s38-in-f3.1e100.net.https > BP-Linux8.34862: Flags [P.], seq 445511:445645, ack 8850, win 441, options [nop,nop,TS val 3186292464 ecr 102922726], length 134
@@ -3448,11 +3370,7 @@
 11:42:27.188996 IP BP-Linux8.34862 > par10s38-in-f3.1e100.net.https: Flags [.], ack 469483, win 2678, options [nop,nop,TS val 102922868 ecr 3186293018], length 0
 11:42:27.189042 IP BP-Linux8.34862 > par10s38-in-f3.1e100.net.https: Flags [P.], seq 9494:9540, ack 469483, win 2678, options [nop,nop,TS val 102922868 ecr 3186293018], length 46
 11:42:27.199921 IP BP-Linux8.34862 > par10s38-in-f3.1e100.net.https: Flags [P.], seq 9540:9752, ack 469483, win 2678, options [nop,nop,TS val 102922870 ecr 3186293018], length 212
-11:42:27.205400 IP BP-Linux8.43795 > ns1.lan.rt.domain: 36242+ A? www.gstatic.com. (33)
-11:42:27.205412 IP BP-Linux8.43795 > ns1.lan.rt.domain: 21873+ AAAA? www.gstatic.com. (33)
 11:42:27.206007 IP par10s38-in-f3.1e100.net.https > BP-Linux8.34862: Flags [.], ack 9540, win 450, options [nop,nop,TS val 3186293036 ecr 102922868], length 0
-11:42:27.206170 IP ns1.lan.rt.domain > BP-Linux8.43795: 36242 1/0/0 A 142.250.201.163 (49)
-11:42:27.206178 IP ns1.lan.rt.domain > BP-Linux8.43795: 21873 1/0/0 AAAA 2a00:1450:4007:81a::2003 (61)
 11:42:27.211791 IP par10s38-in-f3.1e100.net.https > BP-Linux8.34862: Flags [.], ack 9752, win 460, options [nop,nop,TS val 3186293041 ecr 102922870], length 0
 11:42:27.220894 IP BP-Linux8.53440 > par21s23-in-f3.1e100.net.https: Flags [P.], seq 270:364, ack 58068, win 1324, options [nop,nop,TS val 102922876 ecr 2023370610], length 94
 11:42:27.224701 IP par10s38-in-f3.1e100.net.https > BP-Linux8.34862: Flags [P.], seq 469483:469754, ack 9752, win 460, options [nop,nop,TS val 3186293054 ecr 102922870], length 271
@@ -3542,11 +3460,7 @@
 11:42:27.385201 IP par10s38-in-f3.1e100.net.https > BP-Linux8.34862: Flags [P.], seq 538290:538336, ack 9798, win 460, options [nop,nop,TS val 3186293215 ecr 102922912], length 46
 11:42:27.385250 IP BP-Linux8.34862 > par10s38-in-f3.1e100.net.https: Flags [P.], seq 9798:9844, ack 538336, win 2678, options [nop,nop,TS val 102922917 ecr 3186293215], length 46
 11:42:27.397119 IP par10s38-in-f3.1e100.net.https > BP-Linux8.34862: Flags [.], ack 9844, win 460, options [nop,nop,TS val 3186293227 ecr 102922917], length 0
-11:42:27.450627 IP BP-Linux8.37513 > ns1.lan.rt.domain: 2540+ A? id.google.fr. (30)
-11:42:27.450645 IP BP-Linux8.37513 > ns1.lan.rt.domain: 29045+ AAAA? id.google.fr. (30)
-11:42:27.456189 IP ns1.lan.rt.domain > BP-Linux8.37513: 2540 1/0/0 A 216.58.213.67 (46)
 11:42:27.461758 IP BP-Linux8.34862 > par10s38-in-f3.1e100.net.https: Flags [P.], seq 9844:9931, ack 538336, win 2678, options [nop,nop,TS val 102922936 ecr 3186293227], length 87
-11:42:27.473420 IP ns1.lan.rt.domain > BP-Linux8.37513: 29045 1/0/0 AAAA 2a00:1450:4007:819::2003 (58)
 11:42:27.473646 IP par10s38-in-f3.1e100.net.https > BP-Linux8.34862: Flags [.], ack 9931, win 460, options [nop,nop,TS val 3186293303 ecr 102922936], length 0
 11:42:27.476945 IP BP-Linux8.39653 > par21s18-in-f3.1e100.net.https: Flags [S], seq 3060038244, win 29200, options [mss 1460,sackOK,TS val 102922940 ecr 0,nop,wscale 7], length 0
 11:42:27.479037 IP par10s38-in-f3.1e100.net.https > BP-Linux8.34862: Flags [P.], seq 538336:538464, ack 9931, win 460, options [nop,nop,TS val 3186293309 ecr 102922936], length 128
@@ -3763,7 +3677,6 @@
 11:42:27.661987 IP par10s38-in-f3.1e100.net.https > BP-Linux8.34862: Flags [.], seq 767083:768501, ack 10402, win 469, options [nop,nop,TS val 3186293491 ecr 102922981], length 1418
 11:42:27.661988 IP par10s38-in-f3.1e100.net.https > BP-Linux8.34862: Flags [.], seq 768501:769919, ack 10402, win 469, options [nop,nop,TS val 3186293491 ecr 102922981], length 1418
 11:42:27.661990 IP par10s38-in-f3.1e100.net.https > BP-Linux8.34862: Flags [P.], seq 769919:771337, ack 10402, win 469, options [nop,nop,TS val 3186293491 ecr 102922981], length 1418
-11:42:27.662123 IP BP-Linux8.39851 > ns1.lan.rt.domain: 38927+ PTR? 67.213.58.216.in-addr.arpa. (44)
 11:42:27.662426 IP par10s38-in-f3.1e100.net.https > BP-Linux8.34862: Flags [.], seq 771337:772755, ack 10402, win 469, options [nop,nop,TS val 3186293492 ecr 102922981], length 1418
 11:42:27.662725 IP par10s38-in-f3.1e100.net.https > BP-Linux8.34862: Flags [.], seq 772755:774173, ack 10402, win 469, options [nop,nop,TS val 3186293492 ecr 102922981], length 1418
 11:42:27.662728 IP par10s38-in-f3.1e100.net.https > BP-Linux8.34862: Flags [.], seq 774173:775591, ack 10402, win 469, options [nop,nop,TS val 3186293492 ecr 102922981], length 1418
@@ -3809,7 +3722,6 @@
 11:42:27.663707 IP par10s38-in-f3.1e100.net.https > BP-Linux8.34862: Flags [.], seq 830893:832311, ack 10402, win 469, options [nop,nop,TS val 3186293493 ecr 102922981], length 1418
 11:42:27.663708 IP par10s38-in-f3.1e100.net.https > BP-Linux8.34862: Flags [P.], seq 832311:832432, ack 10402, win 469, options [nop,nop,TS val 3186293493 ecr 102922981], length 121
 11:42:27.664799 IP BP-Linux8.34862 > par10s38-in-f3.1e100.net.https: Flags [.], ack 832432, win 1508, options [nop,nop,TS val 102922987 ecr 3186293490], length 0
-11:42:27.685286 IP ns1.lan.rt.domain > BP-Linux8.39851: 38927 3/0/0 PTR par21s18-in-f3.1e100.net., PTR lhr25s01-in-f3.1e100.net., PTR lhr25s01-in-f67.1e100.net. (141)
 11:42:27.721428 IP BP-Linux8.34862 > par10s38-in-f3.1e100.net.https: Flags [P.], seq 10402:10448, ack 832432, win 2678, options [nop,nop,TS val 102923001 ecr 3186293490], length 46
 11:42:27.724764 IP BP-Linux8 > 192.168.115.1: ICMP echo request, id 27625, seq 16, length 64
 11:42:27.724877 IP 192.168.115.1 > BP-Linux8: ICMP echo reply, id 27625, seq 16, length 64
@@ -3825,10 +3737,6 @@
 11:42:27.757674 IP BP-Linux8.34862 > par10s38-in-f3.1e100.net.https: Flags [.], ack 832674, win 2678, options [nop,nop,TS val 102923010 ecr 3186293576], length 0
 11:42:27.757721 IP BP-Linux8.34862 > par10s38-in-f3.1e100.net.https: Flags [P.], seq 10688:10734, ack 832674, win 2678, options [nop,nop,TS val 102923010 ecr 3186293576], length 46
 11:42:27.773995 IP par10s38-in-f3.1e100.net.https > BP-Linux8.34862: Flags [.], ack 10734, win 479, options [nop,nop,TS val 3186293604 ecr 102923010], length 0
-11:42:27.826419 IP BP-Linux8.40708 > ns1.lan.rt.domain: 24259+ A? id.google.com. (31)
-11:42:27.826436 IP BP-Linux8.40708 > ns1.lan.rt.domain: 56351+ AAAA? id.google.com. (31)
-11:42:27.831608 IP ns1.lan.rt.domain > BP-Linux8.40708: 24259 1/0/0 A 142.250.74.227 (47)
-11:42:27.852319 IP ns1.lan.rt.domain > BP-Linux8.40708: 56351 1/0/0 AAAA 2a00:1450:4007:811::2003 (59)
 11:42:27.852736 IP BP-Linux8.59822 > par10s40-in-f3.1e100.net.https: Flags [S], seq 3442115737, win 29200, options [mss 1460,sackOK,TS val 102923033 ecr 0,nop,wscale 7], length 0
 11:42:27.864946 IP par10s40-in-f3.1e100.net.https > BP-Linux8.59822: Flags [S.], seq 1358825572, ack 3442115738, win 65535, options [mss 1430,sackOK,TS val 1454976370 ecr 102923033,nop,wscale 8], length 0
 11:42:27.864965 IP BP-Linux8.59822 > par10s40-in-f3.1e100.net.https: Flags [.], ack 1, win 229, options [nop,nop,TS val 102923037 ecr 1454976370], length 0
@@ -3937,8 +3845,6 @@
 11:42:28.648082 IP BP-Linux8.34862 > par10s38-in-f3.1e100.net.https: Flags [.], ack 874697, win 2678, options [nop,nop,TS val 102923232 ecr 3186294478], length 0
 11:42:28.648132 IP BP-Linux8.34862 > par10s38-in-f3.1e100.net.https: Flags [P.], seq 13461:13507, ack 874697, win 2678, options [nop,nop,TS val 102923232 ecr 3186294478], length 46
 11:42:28.664991 IP par10s38-in-f3.1e100.net.https > BP-Linux8.34862: Flags [.], ack 13507, win 518, options [nop,nop,TS val 3186294495 ecr 102923232], length 0
-11:42:28.691362 IP BP-Linux8.58665 > ns1.lan.rt.domain: 38452+ PTR? 227.74.250.142.in-addr.arpa. (45)
-11:42:28.713922 IP ns1.lan.rt.domain > BP-Linux8.58665: 38452 1/0/0 PTR par10s40-in-f3.1e100.net. (83)
 11:42:28.724749 IP BP-Linux8 > 192.168.115.1: ICMP echo request, id 27625, seq 17, length 64
 11:42:28.724866 IP 192.168.115.1 > BP-Linux8: ICMP echo reply, id 27625, seq 17, length 64
 11:42:28.724935 IP BP-Linux8.ssh > 192.168.190.130.50245: Flags [P.], seq 2789:2889, ack 160, win 291, options [nop,nop,TS val 102923252 ecr 377975885], length 100
@@ -3961,14 +3867,6 @@
 11:42:28.883343 IP BP-Linux8.34862 > par10s38-in-f3.1e100.net.https: Flags [.], ack 877626, win 2678, options [nop,nop,TS val 102923291 ecr 3186294713], length 0
 11:42:28.883400 IP BP-Linux8.34862 > par10s38-in-f3.1e100.net.https: Flags [P.], seq 13756:13802, ack 877626, win 2678, options [nop,nop,TS val 102923291 ecr 3186294713], length 46
 11:42:28.899974 IP par10s38-in-f3.1e100.net.https > BP-Linux8.34862: Flags [.], ack 13802, win 528, options [nop,nop,TS val 3186294730 ecr 102923291], length 0
-11:42:29.096434 IP BP-Linux8.41307 > ns1.lan.rt.domain: 48504+ A? apis.google.com. (33)
-11:42:29.096452 IP BP-Linux8.41307 > ns1.lan.rt.domain: 3809+ AAAA? apis.google.com. (33)
-11:42:29.097001 IP ns1.lan.rt.domain > BP-Linux8.41307: 48504 2/0/0 CNAME plus.l.google.com., A 142.250.74.238 (70)
-11:42:29.097110 IP ns1.lan.rt.domain > BP-Linux8.41307: 3809 2/0/0 CNAME plus.l.google.com., AAAA 2a00:1450:4007:80b::200e (82)
-11:42:29.112060 IP BP-Linux8.35368 > ns1.lan.rt.domain: 22649+ A? iut-roanne.univ-st-etienne.fr. (47)
-11:42:29.112072 IP BP-Linux8.35368 > ns1.lan.rt.domain: 57116+ AAAA? iut-roanne.univ-st-etienne.fr. (47)
-11:42:29.117091 IP ns1.lan.rt.domain > BP-Linux8.35368: 22649 2/0/0 CNAME mauves.univ-st-etienne.fr., A 161.3.1.48 (84)
-11:42:29.121093 IP ns1.lan.rt.domain > BP-Linux8.35368: 57116 1/0/0 CNAME mauves.univ-st-etienne.fr. (68)
 11:42:29.121366 IP BP-Linux8.40678 > mauves.univ-st-etienne.fr.https: Flags [S], seq 809352708, win 29200, options [mss 1460,sackOK,TS val 102923351 ecr 0,nop,wscale 7], length 0
 11:42:29.125576 IP mauves.univ-st-etienne.fr.https > BP-Linux8.40678: Flags [S.], seq 3966644535, ack 809352709, win 28960, options [mss 1460,sackOK,TS val 172356622 ecr 102923351,nop,wscale 7], length 0
 11:42:29.125592 IP BP-Linux8.40678 > mauves.univ-st-etienne.fr.https: Flags [.], ack 1, win 229, options [nop,nop,TS val 102923352 ecr 172356622], length 0
@@ -4007,8 +3905,6 @@
 11:42:29.243867 IP BP-Linux8.34862 > par10s38-in-f3.1e100.net.https: Flags [P.], seq 15066:15112, ack 877868, win 2678, options [nop,nop,TS val 102923381 ecr 3186295071], length 46
 11:42:29.259975 IP par10s38-in-f3.1e100.net.https > BP-Linux8.34862: Flags [.], ack 15112, win 539, options [nop,nop,TS val 3186295090 ecr 102923381], length 0
 11:42:29.309242 IP BP-Linux8.40678 > mauves.univ-st-etienne.fr.https: Flags [P.], seq 743:1142, ack 14892, win 477, options [nop,nop,TS val 102923398 ecr 172356632], length 399
-11:42:29.313384 IP BP-Linux8.57034 > ns1.lan.rt.domain: 58000+ A? fonts.googleapis.com. (38)
-11:42:29.313396 IP BP-Linux8.57034 > ns1.lan.rt.domain: 44052+ AAAA? fonts.googleapis.com. (38)
 11:42:29.315232 IP BP-Linux8.40679 > mauves.univ-st-etienne.fr.https: Flags [S], seq 2855261019, win 29200, options [mss 1460,sackOK,TS val 102923399 ecr 0,nop,wscale 7], length 0
 11:42:29.316836 IP mauves.univ-st-etienne.fr.https > BP-Linux8.40678: Flags [.], seq 14892:16340, ack 1142, win 252, options [nop,nop,TS val 172356670 ecr 102923398], length 1448
 11:42:29.316850 IP BP-Linux8.40678 > mauves.univ-st-etienne.fr.https: Flags [.], ack 16340, win 500, options [nop,nop,TS val 102923400 ecr 172356670], length 0
@@ -4026,8 +3922,6 @@
 11:42:29.317069 IP mauves.univ-st-etienne.fr.https > BP-Linux8.40678: Flags [P.], seq 23580:23676, ack 1142, win 252, options [nop,nop,TS val 172356670 ecr 102923398], length 96
 11:42:29.317071 IP BP-Linux8.40678 > mauves.univ-st-etienne.fr.https: Flags [.], ack 23676, win 613, options [nop,nop,TS val 102923400 ecr 172356670], length 0
 11:42:29.317707 IP BP-Linux8.40678 > mauves.univ-st-etienne.fr.https: Flags [P.], seq 1142:1541, ack 23676, win 613, options [nop,nop,TS val 102923400 ecr 172356670], length 399
-11:42:29.318633 IP ns1.lan.rt.domain > BP-Linux8.57034: 58000 1/0/0 A 172.217.19.234 (54)
-11:42:29.318751 IP ns1.lan.rt.domain > BP-Linux8.57034: 44052 1/0/0 AAAA 2a00:1450:4007:80c::200a (66)
 11:42:29.318932 IP BP-Linux8.34595 > par21s11-in-f10.1e100.net.https: Flags [S], seq 1459489289, win 29200, options [mss 1460,sackOK,TS val 102923400 ecr 0,nop,wscale 7], length 0
 11:42:29.319398 IP mauves.univ-st-etienne.fr.https > BP-Linux8.40679: Flags [S.], seq 1290939787, ack 2855261020, win 28960, options [mss 1460,sackOK,TS val 172356671 ecr 102923399,nop,wscale 7], length 0
 11:42:29.319409 IP BP-Linux8.40679 > mauves.univ-st-etienne.fr.https: Flags [.], ack 1, win 229, options [nop,nop,TS val 102923400 ecr 172356671], length 0
@@ -4276,7 +4170,6 @@
 11:42:29.449384 IP BP-Linux8.40682 > mauves.univ-st-etienne.fr.https: Flags [.], ack 17189, win 500, options [nop,nop,TS val 102923433 ecr 172356703], length 0
 11:42:29.449389 IP mauves.univ-st-etienne.fr.https > BP-Linux8.40682: Flags [.], seq 17189:18637, ack 749, win 243, options [nop,nop,TS val 172356703 ecr 102923426], length 1448
 11:42:29.449391 IP BP-Linux8.40682 > mauves.univ-st-etienne.fr.https: Flags [.], ack 18637, win 523, options [nop,nop,TS val 102923433 ecr 172356703], length 0
-11:42:29.450404 IP BP-Linux8.54803 > ns1.lan.rt.domain: 46519+ PTR? 48.1.3.161.in-addr.arpa. (41)
 11:42:29.452925 IP mauves.univ-st-etienne.fr.https > BP-Linux8.40682: Flags [.], seq 18637:20085, ack 749, win 243, options [nop,nop,TS val 172356704 ecr 102923433], length 1448
 11:42:29.452933 IP BP-Linux8.40682 > mauves.univ-st-etienne.fr.https: Flags [.], ack 20085, win 545, options [nop,nop,TS val 102923434 ecr 172356704], length 0
 11:42:29.453040 IP mauves.univ-st-etienne.fr.https > BP-Linux8.40682: Flags [.], seq 20085:21533, ack 749, win 243, options [nop,nop,TS val 172356704 ecr 102923433], length 1448
@@ -4317,13 +4210,10 @@
 11:42:29.453536 IP BP-Linux8.40682 > mauves.univ-st-etienne.fr.https: Flags [.], ack 46149, win 953, options [nop,nop,TS val 102923434 ecr 172356704], length 0
 11:42:29.453541 IP mauves.univ-st-etienne.fr.https > BP-Linux8.40682: Flags [.], seq 46149:47597, ack 749, win 243, options [nop,nop,TS val 172356704 ecr 102923433], length 1448
 11:42:29.453543 IP BP-Linux8.40682 > mauves.univ-st-etienne.fr.https: Flags [.], ack 47597, win 975, options [nop,nop,TS val 102923434 ecr 172356704], length 0
-11:42:29.455694 IP ns1.lan.rt.domain > BP-Linux8.54803: 46519 1/0/0 PTR mauves.univ-st-etienne.fr. (80)
 11:42:29.456653 IP mauves.univ-st-etienne.fr.https > BP-Linux8.40682: Flags [.], seq 47597:49045, ack 749, win 243, options [nop,nop,TS val 172356705 ecr 102923434], length 1448
 11:42:29.456658 IP BP-Linux8.40682 > mauves.univ-st-etienne.fr.https: Flags [.], ack 49045, win 998, options [nop,nop,TS val 102923434 ecr 172356705], length 0
 11:42:29.456756 IP mauves.univ-st-etienne.fr.https > BP-Linux8.40682: Flags [P.], seq 49045:49121, ack 749, win 243, options [nop,nop,TS val 172356705 ecr 102923434], length 76
 11:42:29.456760 IP BP-Linux8.40682 > mauves.univ-st-etienne.fr.https: Flags [.], ack 49121, win 998, options [nop,nop,TS val 102923435 ecr 172356705], length 0
-11:42:29.459543 IP BP-Linux8.47012 > ns1.lan.rt.domain: 32547+ PTR? 234.19.217.172.in-addr.arpa. (45)
-11:42:29.482213 IP ns1.lan.rt.domain > BP-Linux8.47012: 32547 1/0/0 PTR par21s11-in-f10.1e100.net. (84)
 11:42:29.493924 IP BP-Linux8.34595 > par21s11-in-f10.1e100.net.https: Flags [P.], seq 202:295, ack 4600, win 319, options [nop,nop,TS val 102923444 ecr 3039556352], length 93
 11:42:29.506177 IP par21s11-in-f10.1e100.net.https > BP-Linux8.34595: Flags [P.], seq 4600:4892, ack 295, win 261, options [nop,nop,TS val 3039556421 ecr 102923444], length 292
 11:42:29.506187 IP BP-Linux8.34595 > par21s11-in-f10.1e100.net.https: Flags [.], ack 4892, win 341, options [nop,nop,TS val 102923447 ecr 3039556421], length 0
@@ -6015,15 +5905,7 @@
 11:42:30.602371 IP BP-Linux8.37254 > par21s05-in-f131.1e100.net.http: Flags [.], ack 2, win 229, options [nop,nop,TS val 102923721 ecr 1754585795], length 0
 11:42:30.602377 IP par21s05-in-f131.1e100.net.http > BP-Linux8.37253: Flags [F.], seq 1, ack 2, win 256, options [nop,nop,TS val 1784725066 ecr 102923718], length 0
 11:42:30.602379 IP BP-Linux8.37253 > par21s05-in-f131.1e100.net.http: Flags [.], ack 2, win 229, options [nop,nop,TS val 102923721 ecr 1784725066], length 0
-11:42:30.704470 IP BP-Linux8.56350 > ns1.lan.rt.domain: 17086+ A? www.google-analytics.com. (42)
-11:42:30.704489 IP BP-Linux8.56350 > ns1.lan.rt.domain: 4217+ AAAA? www.google-analytics.com. (42)
-11:42:30.710176 IP ns1.lan.rt.domain > BP-Linux8.56350: 17086 2/0/0 CNAME www-google-analytics.l.google.com., A 142.250.179.110 (102)
-11:42:30.710309 IP BP-Linux8.45800 > ns1.lan.rt.domain: 60681+ A? piwik.univ-st-etienne.fr. (42)
-11:42:30.710328 IP BP-Linux8.45800 > ns1.lan.rt.domain: 12722+ AAAA? piwik.univ-st-etienne.fr. (42)
-11:42:30.710539 IP ns1.lan.rt.domain > BP-Linux8.56350: 4217 2/0/0 CNAME www-google-analytics.l.google.com., AAAA 2a00:1450:4007:818::200e (114)
 11:42:30.710755 IP BP-Linux8.33251 > par21s20-in-f14.1e100.net.https: Flags [S], seq 1582412428, win 29200, options [mss 1460,sackOK,TS val 102923748 ecr 0,nop,wscale 7], length 0
-11:42:30.715366 IP ns1.lan.rt.domain > BP-Linux8.45800: 60681 2/0/0 CNAME mauves.univ-st-etienne.fr., A 161.3.1.48 (79)
-11:42:30.715486 IP ns1.lan.rt.domain > BP-Linux8.45800: 12722 1/1/0 CNAME mauves.univ-st-etienne.fr. (111)
 11:42:30.715656 IP BP-Linux8.40686 > mauves.univ-st-etienne.fr.https: Flags [S], seq 2960913551, win 29200, options [mss 1460,sackOK,TS val 102923749 ecr 0,nop,wscale 7], length 0
 11:42:30.719481 IP mauves.univ-st-etienne.fr.https > BP-Linux8.40686: Flags [S.], seq 1532648043, ack 2960913552, win 28960, options [mss 1460,sackOK,TS val 172357021 ecr 102923749,nop,wscale 7], length 0
 11:42:30.719494 IP BP-Linux8.40686 > mauves.univ-st-etienne.fr.https: Flags [.], ack 1, win 229, options [nop,nop,TS val 102923750 ecr 172357021], length 0
@@ -6297,10 +6179,6 @@
 11:42:30.813884 IP mauves.univ-st-etienne.fr.https > BP-Linux8.40683: Flags [.], seq 104391:105839, ack 2505, win 271, options [nop,nop,TS val 172357044 ecr 102923773], length 1448
 11:42:30.813886 IP mauves.univ-st-etienne.fr.https > BP-Linux8.40683: Flags [.], seq 105839:107287, ack 2505, win 271, options [nop,nop,TS val 172357044 ecr 102923773], length 1448
 11:42:30.813887 IP mauves.univ-st-etienne.fr.https > BP-Linux8.40683: Flags [.], seq 107287:108735, ack 2505, win 271, options [nop,nop,TS val 172357044 ecr 102923773], length 1448
-11:42:30.815989 IP BP-Linux8.44656 > ns1.lan.rt.domain: 31894+ A? fonts.gstatic.com. (35)
-11:42:30.815998 IP BP-Linux8.44656 > ns1.lan.rt.domain: 56003+ AAAA? fonts.gstatic.com. (35)
-11:42:30.816596 IP ns1.lan.rt.domain > BP-Linux8.44656: 31894 2/0/0 CNAME gstaticadssl.l.google.com., A 142.250.201.163 (87)
-11:42:30.816713 IP ns1.lan.rt.domain > BP-Linux8.44656: 56003 2/0/0 CNAME gstaticadssl.l.google.com., AAAA 2a00:1450:4007:81a::2003 (99)
 11:42:30.816859 IP mauves.univ-st-etienne.fr.https > BP-Linux8.40683: Flags [.], seq 108735:110183, ack 2505, win 271, options [nop,nop,TS val 172357045 ecr 102923774], length 1448
 11:42:30.816983 IP mauves.univ-st-etienne.fr.https > BP-Linux8.40683: Flags [.], seq 110183:111631, ack 2505, win 271, options [nop,nop,TS val 172357045 ecr 102923774], length 1448
 11:42:30.817713 IP mauves.univ-st-etienne.fr.https > BP-Linux8.40683: Flags [.], seq 111631:113079, ack 2505, win 271, options [nop,nop,TS val 172357045 ecr 102923774], length 1448
@@ -6338,7 +6216,6 @@
 11:42:30.851878 IP mauves.univ-st-etienne.fr.https > BP-Linux8.40682: Flags [.], seq 531381:532829, ack 2886, win 279, options [nop,nop,TS val 172357054 ecr 102923782], length 1448
 11:42:30.851880 IP BP-Linux8.40682 > mauves.univ-st-etienne.fr.https: Flags [.], ack 532829, win 1677, options [nop,nop,TS val 102923783 ecr 172357054], length 0
 11:42:30.852725 IP BP-Linux8.40683 > mauves.univ-st-etienne.fr.https: Flags [.], ack 126111, win 1039, options [nop,nop,TS val 102923784 ecr 172357044], length 0
-11:42:30.855303 IP BP-Linux8.44062 > ns1.lan.rt.domain: 23568+ PTR? 110.204.58.216.in-addr.arpa. (45)
 11:42:30.855348 IP mauves.univ-st-etienne.fr.https > BP-Linux8.40682: Flags [.], seq 532829:534277, ack 2886, win 279, options [nop,nop,TS val 172357055 ecr 102923783], length 1448
 11:42:30.855352 IP BP-Linux8.40682 > mauves.univ-st-etienne.fr.https: Flags [.], ack 534277, win 1699, options [nop,nop,TS val 102923784 ecr 172357055], length 0
 11:42:30.855358 IP mauves.univ-st-etienne.fr.https > BP-Linux8.40682: Flags [.], seq 534277:535725, ack 2886, win 279, options [nop,nop,TS val 172357055 ecr 102923783], length 1448
@@ -6426,7 +6303,6 @@
 11:42:30.877118 IP mauves.univ-st-etienne.fr.https > BP-Linux8.40678: Flags [.], seq 481000:482448, ack 4883, win 322, options [nop,nop,TS val 172357060 ecr 102923788], length 1448
 11:42:30.877119 IP mauves.univ-st-etienne.fr.https > BP-Linux8.40678: Flags [.], seq 482448:483896, ack 4883, win 322, options [nop,nop,TS val 172357060 ecr 102923788], length 1448
 11:42:30.877120 IP mauves.univ-st-etienne.fr.https > BP-Linux8.40678: Flags [.], seq 483896:485344, ack 4883, win 322, options [nop,nop,TS val 172357060 ecr 102923788], length 1448
-11:42:30.878604 IP ns1.lan.rt.domain > BP-Linux8.44062: 23568 2/0/0 PTR par10s28-in-f14.1e100.net., PTR par10s28-in-f110.1e100.net. (115)
 11:42:30.880552 IP mauves.univ-st-etienne.fr.https > BP-Linux8.40678: Flags [.], seq 485344:486792, ack 4883, win 322, options [nop,nop,TS val 172357061 ecr 102923790], length 1448
 11:42:30.880672 IP mauves.univ-st-etienne.fr.https > BP-Linux8.40678: Flags [.], seq 486792:488240, ack 4883, win 322, options [nop,nop,TS val 172357061 ecr 102923790], length 1448
 11:42:30.880973 IP mauves.univ-st-etienne.fr.https > BP-Linux8.40678: Flags [.], seq 488240:489688, ack 4883, win 322, options [nop,nop,TS val 172357061 ecr 102923790], length 1448
@@ -6465,9 +6341,7 @@
 11:42:30.920745 IP mauves.univ-st-etienne.fr.https > BP-Linux8.40678: Flags [.], seq 528784:530232, ack 4883, win 322, options [nop,nop,TS val 172357071 ecr 102923800], length 1448
 11:42:30.920746 IP mauves.univ-st-etienne.fr.https > BP-Linux8.40678: Flags [.], seq 530232:531680, ack 4883, win 322, options [nop,nop,TS val 172357071 ecr 102923800], length 1448
 11:42:30.920747 IP mauves.univ-st-etienne.fr.https > BP-Linux8.40678: Flags [P.], seq 531680:531993, ack 4883, win 322, options [nop,nop,TS val 172357071 ecr 102923800], length 313
-11:42:30.920866 IP BP-Linux8.41484 > ns1.lan.rt.domain: 60931+ PTR? 110.179.250.142.in-addr.arpa. (46)
 11:42:30.928521 IP BP-Linux8.40678 > mauves.univ-st-etienne.fr.https: Flags [.], ack 531993, win 1518, options [nop,nop,TS val 102923802 ecr 172357071], length 0
-11:42:30.943654 IP ns1.lan.rt.domain > BP-Linux8.41484: 60931 1/0/0 PTR par21s20-in-f14.1e100.net. (85)
 11:42:30.957624 IP BP-Linux8.33251 > par21s20-in-f14.1e100.net.https: Flags [P.], seq 299:462, ack 4830, win 341, options [nop,nop,TS val 102923810 ecr 1077961537], length 163
 11:42:30.957670 IP BP-Linux8.33251 > par21s20-in-f14.1e100.net.https: Flags [P.], seq 462:700, ack 4830, win 341, options [nop,nop,TS val 102923810 ecr 1077961537], length 238
 11:42:30.969520 IP par21s20-in-f14.1e100.net.https > BP-Linux8.33251: Flags [P.], seq 4830:4868, ack 462, win 265, options [nop,nop,TS val 1077961715 ecr 102923810], length 38
@@ -6807,12 +6681,8 @@
 11:42:31.745241 IP 192.168.190.130.50245 > BP-Linux8.ssh: Flags [.], ack 3189, win 2046, options [nop,nop,TS val 377979759 ecr 102924002], length 0
 11:42:32.027985 IP BP-Linux8.40686 > mauves.univ-st-etienne.fr.https: Flags [P.], seq 674:1490, ack 28211, win 681, options [nop,nop,TS val 102924077 ecr 172357041], length 816
 11:42:32.074139 IP mauves.univ-st-etienne.fr.https > BP-Linux8.40686: Flags [.], ack 1490, win 256, options [nop,nop,TS val 172357360 ecr 102924077], length 0
-11:42:32.089242 IP BP-Linux8.48753 > ns1.lan.rt.domain: 823+ A? www.google-analytics.com. (42)
-11:42:32.089258 IP BP-Linux8.48753 > ns1.lan.rt.domain: 35531+ AAAA? www.google-analytics.com. (42)
 11:42:32.089494 IP BP-Linux8.33251 > par21s20-in-f14.1e100.net.https: Flags [P.], seq 784:1191, ack 25781, win 702, options [nop,nop,TS val 102924093 ecr 1077961842], length 407
 11:42:32.089635 IP BP-Linux8.33251 > par21s20-in-f14.1e100.net.https: Flags [P.], seq 1191:1229, ack 25781, win 702, options [nop,nop,TS val 102924093 ecr 1077961842], length 38
-11:42:32.090165 IP ns1.lan.rt.domain > BP-Linux8.48753: 823 2/0/0 CNAME www-google-analytics.l.google.com., A 142.250.179.110 (102)
-11:42:32.090283 IP ns1.lan.rt.domain > BP-Linux8.48753: 35531 2/0/0 CNAME www-google-analytics.l.google.com., AAAA 2a00:1450:4007:818::200e (114)
 11:42:32.095886 IP mauves.univ-st-etienne.fr.https > BP-Linux8.40686: Flags [P.], seq 28211:28448, ack 1490, win 256, options [nop,nop,TS val 172357365 ecr 102924077], length 237
 11:42:32.095897 IP BP-Linux8.40686 > mauves.univ-st-etienne.fr.https: Flags [.], ack 28448, win 704, options [nop,nop,TS val 102924094 ecr 172357365], length 0
 11:42:32.101399 IP par21s20-in-f14.1e100.net.https > BP-Linux8.33251: Flags [.], ack 1191, win 273, options [nop,nop,TS val 1077962847 ecr 102924093], length 0
@@ -7187,16 +7057,12 @@
 11:42:45.745185 IP 192.168.190.130.50245 > BP-Linux8.ssh: Flags [.], ack 4589, win 2046, options [nop,nop,TS val 377993252 ecr 102927502], length 0
 11:42:45.750090 IP par21s04-in-f4.1e100.net.https > BP-Linux8.41767: Flags [.], ack 6407, win 485, options [nop,nop,TS val 2380268695 ecr 102927505], length 0
 11:42:45.750204 IP par21s04-in-f4.1e100.net.https > BP-Linux8.41767: Flags [.], ack 6445, win 485, options [nop,nop,TS val 2380268695 ecr 102927505], length 0
-11:42:45.758736 IP BP-Linux8.59354 > ns1.lan.rt.domain: 52921+ A? www.aggloroanne.fr. (36)
-11:42:45.758749 IP BP-Linux8.59354 > ns1.lan.rt.domain: 40388+ AAAA? www.aggloroanne.fr. (36)
 11:42:45.759173 IP par21s04-in-f4.1e100.net.https > BP-Linux8.41767: Flags [P.], seq 203974:204132, ack 6445, win 485, options [nop,nop,TS val 2380268704 ecr 102927505], length 158
 11:42:45.759440 IP par21s04-in-f4.1e100.net.https > BP-Linux8.41767: Flags [P.], seq 204132:204170, ack 6445, win 485, options [nop,nop,TS val 2380268704 ecr 102927505], length 38
 11:42:45.759470 IP BP-Linux8.41767 > par21s04-in-f4.1e100.net.https: Flags [.], ack 204170, win 2946, options [nop,nop,TS val 102927510 ecr 2380268704], length 0
 11:42:45.759564 IP par21s04-in-f4.1e100.net.https > BP-Linux8.41767: Flags [P.], seq 204170:204216, ack 6445, win 485, options [nop,nop,TS val 2380268704 ecr 102927505], length 46
 11:42:45.759679 IP BP-Linux8.41767 > par21s04-in-f4.1e100.net.https: Flags [P.], seq 6445:6491, ack 204216, win 2946, options [nop,nop,TS val 102927510 ecr 2380268704], length 46
 11:42:45.776431 IP par21s04-in-f4.1e100.net.https > BP-Linux8.41767: Flags [.], ack 6491, win 485, options [nop,nop,TS val 2380268721 ecr 102927510], length 0
-11:42:45.788958 IP ns1.lan.rt.domain > BP-Linux8.59354: 40388 0/1/0 (96)
-11:42:45.789077 IP ns1.lan.rt.domain > BP-Linux8.59354: 52921 1/0/0 A 46.105.120.62 (52)
 11:42:45.789329 IP BP-Linux8.53324 > www.aggloroanne.fr.https: Flags [S], seq 1097487483, win 29200, options [mss 1460,sackOK,TS val 102927518 ecr 0,nop,wscale 7], length 0
 11:42:45.808386 IP www.aggloroanne.fr.https > BP-Linux8.53324: Flags [S.], seq 1049584894, ack 1097487484, win 28960, options [mss 1460,sackOK,TS val 1512074107 ecr 102927518,nop,wscale 7], length 0
 11:42:45.808404 IP BP-Linux8.53324 > www.aggloroanne.fr.https: Flags [.], ack 1, win 229, options [nop,nop,TS val 102927522 ecr 1512074107], length 0
@@ -7263,7 +7129,6 @@
 11:42:46.288525 IP BP-Linux8.53324 > www.aggloroanne.fr.https: Flags [.], ack 47880, win 1020, options [nop,nop,TS val 102927642 ecr 1512074227], length 0
 11:42:46.369510 IP BP-Linux8.41767 > par21s04-in-f4.1e100.net.https: Flags [P.], seq 6491:6652, ack 204216, win 2946, options [nop,nop,TS val 102927663 ecr 2380268721], length 161
 11:42:46.369656 IP BP-Linux8.41767 > par21s04-in-f4.1e100.net.https: Flags [P.], seq 6652:6690, ack 204216, win 2946, options [nop,nop,TS val 102927663 ecr 2380268721], length 38
-11:42:46.370596 IP BP-Linux8.44208 > ns1.lan.rt.domain: 41541+ PTR? 62.120.105.46.in-addr.arpa. (44)
 11:42:46.381396 IP par21s04-in-f4.1e100.net.https > BP-Linux8.41767: Flags [.], ack 6652, win 496, options [nop,nop,TS val 2380269326 ecr 102927663], length 0
 11:42:46.381503 IP par21s04-in-f4.1e100.net.https > BP-Linux8.41767: Flags [.], ack 6690, win 496, options [nop,nop,TS val 2380269326 ecr 102927663], length 0
 11:42:46.389374 IP par21s04-in-f4.1e100.net.https > BP-Linux8.41767: Flags [P.], seq 204216:204374, ack 6690, win 496, options [nop,nop,TS val 2380269334 ecr 102927663], length 158
@@ -7272,7 +7137,6 @@
 11:42:46.389655 IP BP-Linux8.41767 > par21s04-in-f4.1e100.net.https: Flags [.], ack 204458, win 2946, options [nop,nop,TS val 102927668 ecr 2380269334], length 0
 11:42:46.389703 IP BP-Linux8.41767 > par21s04-in-f4.1e100.net.https: Flags [P.], seq 6690:6736, ack 204458, win 2946, options [nop,nop,TS val 102927668 ecr 2380269334], length 46
 11:42:46.407429 IP par21s04-in-f4.1e100.net.https > BP-Linux8.41767: Flags [.], ack 6736, win 496, options [nop,nop,TS val 2380269352 ecr 102927668], length 0
-11:42:46.424099 IP ns1.lan.rt.domain > BP-Linux8.44208: 41541 1/0/0 PTR www.aggloroanne.fr. (76)
 11:42:46.471259 IP BP-Linux8.53324 > www.aggloroanne.fr.https: Flags [P.], seq 1200:1728, ack 47880, win 1020, options [nop,nop,TS val 102927688 ecr 1512074227], length 528
 11:42:46.472625 IP BP-Linux8.53325 > www.aggloroanne.fr.https: Flags [S], seq 1348904124, win 29200, options [mss 1460,sackOK,TS val 102927688 ecr 0,nop,wscale 7], length 0
 11:42:46.474022 IP BP-Linux8.53326 > www.aggloroanne.fr.https: Flags [S], seq 3341269326, win 29200, options [mss 1460,sackOK,TS val 102927689 ecr 0,nop,wscale 7], length 0
@@ -7998,10 +7862,6 @@
 11:42:46.827899 IP BP-Linux8.53329 > www.aggloroanne.fr.https: Flags [P.], seq 2951:3411, ack 60908, win 1232, options [nop,nop,TS val 102927777 ecr 1512074344], length 460
 11:42:46.827968 IP BP-Linux8.53325 > www.aggloroanne.fr.https: Flags [.], ack 168864, win 1074, options [nop,nop,TS val 102927777 ecr 1512074354], length 0
 11:42:46.840789 IP BP-Linux8.53325 > www.aggloroanne.fr.https: Flags [P.], seq 3461:3926, ack 168864, win 1324, options [nop,nop,TS val 102927781 ecr 1512074354], length 465
-11:42:46.842195 IP BP-Linux8.51498 > ns1.lan.rt.domain: 31409+ A? translate.google.com. (38)
-11:42:46.842209 IP BP-Linux8.51498 > ns1.lan.rt.domain: 29352+ AAAA? translate.google.com. (38)
-11:42:46.847669 IP ns1.lan.rt.domain > BP-Linux8.51498: 31409 2/0/0 CNAME www3.l.google.com., A 216.58.215.46 (75)
-11:42:46.848031 IP ns1.lan.rt.domain > BP-Linux8.51498: 29352 2/0/0 CNAME www3.l.google.com., AAAA 2a00:1450:4007:808::200e (87)
 11:42:46.848422 IP www.aggloroanne.fr.https > BP-Linux8.53326: Flags [.], seq 79630:81078, ack 2926, win 277, options [nop,nop,TS val 1512074367 ecr 102927777], length 1448
 11:42:46.848608 IP www.aggloroanne.fr.https > BP-Linux8.53326: Flags [.], seq 81078:82526, ack 2926, win 277, options [nop,nop,TS val 1512074367 ecr 102927777], length 1448
 11:42:46.848614 IP BP-Linux8.53326 > www.aggloroanne.fr.https: Flags [.], ack 82526, win 1267, options [nop,nop,TS val 102927782 ecr 1512074367], length 0
@@ -8741,10 +8601,8 @@
 11:42:47.260551 IP www.aggloroanne.fr.https > BP-Linux8.53326: Flags [.], seq 228700:230148, ack 4398, win 302, options [nop,nop,TS val 1512074470 ecr 102927881], length 1448
 11:42:47.260555 IP www.aggloroanne.fr.https > BP-Linux8.53326: Flags [.], seq 230148:231596, ack 4398, win 302, options [nop,nop,TS val 1512074470 ecr 102927881], length 1448
 11:42:47.260556 IP www.aggloroanne.fr.https > BP-Linux8.53326: Flags [P.], seq 231596:232708, ack 4398, win 302, options [nop,nop,TS val 1512074470 ecr 102927881], length 1112
-11:42:47.269023 IP BP-Linux8.50248 > ns1.lan.rt.domain: 36528+ PTR? 46.215.58.216.in-addr.arpa. (44)
 11:42:47.271023 IP BP-Linux8.53329 > www.aggloroanne.fr.https: Flags [.], ack 204653, win 919, options [nop,nop,TS val 102927888 ecr 1512074467], length 0
 11:42:47.280729 IP BP-Linux8.53326 > www.aggloroanne.fr.https: Flags [.], ack 232708, win 1393, options [nop,nop,TS val 102927891 ecr 1512074465], length 0
-11:42:47.292787 IP ns1.lan.rt.domain > BP-Linux8.50248: 36528 1/0/0 PTR par21s17-in-f14.1e100.net. (83)
 11:42:47.296819 IP BP-Linux8.48264 > par21s17-in-f14.1e100.net.https: Flags [P.], seq 295:458, ack 6915, win 363, options [nop,nop,TS val 102927895 ecr 2618667419], length 163
 11:42:47.296883 IP BP-Linux8.48264 > par21s17-in-f14.1e100.net.https: Flags [P.], seq 458:980, ack 6915, win 363, options [nop,nop,TS val 102927895 ecr 2618667419], length 522
 11:42:47.297080 IP BP-Linux8.48265 > par21s17-in-f14.1e100.net.https: Flags [P.], seq 295:458, ack 6915, win 363, options [nop,nop,TS val 102927895 ecr 405988674], length 163
@@ -10507,10 +10365,6 @@
 11:42:48.714038 IP www.aggloroanne.fr.https > BP-Linux8.53329: Flags [P.], seq 430261:430987, ack 11435, win 428, options [nop,nop,TS val 1512074833 ecr 102928244], length 726
 11:42:48.714042 IP BP-Linux8.53329 > www.aggloroanne.fr.https: Flags [.], ack 430987, win 2907, options [nop,nop,TS val 102928249 ecr 1512074833], length 0
 11:42:48.714466 IP BP-Linux8.53329 > www.aggloroanne.fr.https: Flags [P.], seq 11435:11889, ack 430987, win 2927, options [nop,nop,TS val 102928249 ecr 1512074833], length 454
-11:42:48.715703 IP BP-Linux8.51178 > ns1.lan.rt.domain: 784+ A? translate.googleapis.com. (42)
-11:42:48.715712 IP BP-Linux8.51178 > ns1.lan.rt.domain: 46441+ AAAA? translate.googleapis.com. (42)
-11:42:48.721554 IP ns1.lan.rt.domain > BP-Linux8.51178: 46441 1/0/0 AAAA 2a00:1450:4007:81a::200a (70)
-11:42:48.721741 IP ns1.lan.rt.domain > BP-Linux8.51178: 784 1/0/0 A 142.250.201.170 (58)
 11:42:48.721896 IP BP-Linux8.41372 > par21s23-in-f10.1e100.net.https: Flags [S], seq 1147148143, win 29200, options [mss 1460,sackOK,TS val 102928251 ecr 0,nop,wscale 7], length 0
 11:42:48.721950 IP BP-Linux8.41373 > par21s23-in-f10.1e100.net.https: Flags [S], seq 3496041387, win 29200, options [mss 1460,sackOK,TS val 102928251 ecr 0,nop,wscale 7], length 0
 11:42:48.724748 IP BP-Linux8 > 192.168.115.1: ICMP echo request, id 27625, seq 37, length 64
@@ -10732,16 +10586,10 @@
 11:42:48.941270 IP par21s23-in-f10.1e100.net.https > BP-Linux8.41372: Flags [F.], seq 86001, ack 907, win 269, options [nop,nop,TS val 4059978138 ecr 102928303], length 0
 11:42:48.941275 IP BP-Linux8.41372 > par21s23-in-f10.1e100.net.https: Flags [.], ack 86002, win 1110, options [nop,nop,TS val 102928306 ecr 4059978138], length 0
 11:42:48.941392 IP par21s23-in-f10.1e100.net.https > BP-Linux8.41372: Flags [.], ack 908, win 269, options [nop,nop,TS val 4059978138 ecr 102928303], length 0
-11:42:49.026739 IP BP-Linux8.46609 > ns1.lan.rt.domain: 23937+ A? analytics.stratis.fr. (38)
-11:42:49.026765 IP BP-Linux8.46609 > ns1.lan.rt.domain: 52840+ AAAA? analytics.stratis.fr. (38)
-11:42:49.056785 IP BP-Linux8.33585 > ns1.lan.rt.domain: 26522+ PTR? 170.201.250.142.in-addr.arpa. (46)
-11:42:49.058155 IP ns1.lan.rt.domain > BP-Linux8.46609: 23937 2/0/0 CNAME www02.stratis.fr., A 91.121.37.244 (74)
 11:42:49.066685 IP BP-Linux8.53324 > www.aggloroanne.fr.https: Flags [P.], seq 14582:15074, ack 650136, win 1815, options [nop,nop,TS val 102928337 ecr 1512074886], length 492
-11:42:49.066831 IP ns1.lan.rt.domain > BP-Linux8.46609: 52840 1/0/0 CNAME www02.stratis.fr. (58)
 11:42:49.067063 IP BP-Linux8.43668 > 91.121.37.244.https: Flags [S], seq 353036284, win 29200, options [mss 1460,sackOK,TS val 102928337 ecr 0,nop,wscale 7], length 0
 11:42:49.068703 IP BP-Linux8.53329 > www.aggloroanne.fr.https: Flags [P.], seq 11889:12379, ack 434381, win 2927, options [nop,nop,TS val 102928337 ecr 1512074838], length 490
 11:42:49.070867 IP BP-Linux8.53328 > www.aggloroanne.fr.https: Flags [P.], seq 11454:11945, ack 446638, win 2700, options [nop,nop,TS val 102928338 ecr 1512074838], length 491
-11:42:49.079534 IP ns1.lan.rt.domain > BP-Linux8.33585: 26522 1/0/0 PTR par21s23-in-f10.1e100.net. (85)
 11:42:49.086182 IP 91.121.37.244.https > BP-Linux8.43668: Flags [S.], seq 4280357973, ack 353036285, win 29200, options [mss 1460,nop,nop,sackOK,nop,wscale 7], length 0
 11:42:49.086198 IP BP-Linux8.43668 > 91.121.37.244.https: Flags [.], ack 1, win 229, length 0
 11:42:49.087802 IP BP-Linux8.43668 > 91.121.37.244.https: Flags [P.], seq 1:202, ack 1, win 229, length 201
@@ -10757,11 +10605,7 @@
 11:42:49.110805 IP BP-Linux8.43668 > 91.121.37.244.https: Flags [.], ack 2921, win 274, length 0
 11:42:49.110812 IP 91.121.37.244.https > BP-Linux8.43668: Flags [P.], seq 2921:3542, ack 202, win 237, length 621
 11:42:49.110816 IP BP-Linux8.43668 > 91.121.37.244.https: Flags [.], ack 3542, win 297, length 0
-11:42:49.120456 IP BP-Linux8.44899 > ns1.lan.rt.domain: 64894+ A? ocsp.usertrust.com. (36)
-11:42:49.120481 IP BP-Linux8.44899 > ns1.lan.rt.domain: 64417+ AAAA? ocsp.usertrust.com. (36)
-11:42:49.121163 IP ns1.lan.rt.domain > BP-Linux8.44899: 64894 3/0/0 CNAME ocsp.comodoca.com.cdn.cloudflare.net., A 104.18.31.182, A 104.18.30.182 (118)
 11:42:49.124729 IP BP-Linux8.53324 > www.aggloroanne.fr.https: Flags [.], ack 651254, win 1815, options [nop,nop,TS val 102928352 ecr 1512074927], length 0
-11:42:49.126126 IP ns1.lan.rt.domain > BP-Linux8.44899: 64417 3/0/0 CNAME ocsp.comodoca.com.cdn.cloudflare.net., AAAA 2606:4700::6812:1fb6, AAAA 2606:4700::6812:1eb6 (142)
 11:42:49.128729 IP BP-Linux8.53329 > www.aggloroanne.fr.https: Flags [.], ack 435592, win 2927, options [nop,nop,TS val 102928353 ecr 1512074927], length 0
 11:42:49.131655 IP BP-Linux8.43668 > 91.121.37.244.https: Flags [P.], seq 202:328, ack 3542, win 297, length 126
 11:42:49.131845 IP BP-Linux8.35405 > 104.18.31.182.http: Flags [S], seq 1459256217, win 29200, options [mss 1460,sackOK,TS val 102928353 ecr 0,nop,wscale 7], length 0
@@ -10850,10 +10694,6 @@
 11:42:50.002387 IP www.aggloroanne.fr.https > BP-Linux8.53327: Flags [P.], seq 369079:370190, ack 11868, win 436, options [nop,nop,TS val 1512075155 ecr 102928566], length 1111
 11:42:50.040731 IP BP-Linux8.53326 > www.aggloroanne.fr.https: Flags [.], ack 431025, win 1810, options [nop,nop,TS val 102928581 ecr 1512075155], length 0
 11:42:50.040747 IP BP-Linux8.53327 > www.aggloroanne.fr.https: Flags [.], ack 370190, win 2538, options [nop,nop,TS val 102928581 ecr 1512075155], length 0
-11:42:50.041035 IP BP-Linux8.35864 > ns1.lan.rt.domain: 2970+ PTR? 244.37.121.91.in-addr.arpa. (44)
-11:42:50.084152 IP ns1.lan.rt.domain > BP-Linux8.35864: 2970 NXDomain 0/1/0 (96)
-11:42:50.085708 IP BP-Linux8.37273 > ns1.lan.rt.domain: 3584+ PTR? 182.31.18.104.in-addr.arpa. (44)
-11:42:50.108153 IP ns1.lan.rt.domain > BP-Linux8.37273: 3584 NXDomain 0/1/0 (106)
 11:42:50.190578 IP BP-Linux8.53440 > par21s23-in-f3.1e100.net.https: Flags [P.], seq 410:574, ack 63062, win 1324, options [nop,nop,TS val 102928618 ecr 2023375084], length 164
 11:42:50.198673 IP BP-Linux8.41767 > par21s04-in-f4.1e100.net.https: Flags [P.], seq 6736:6885, ack 204458, win 2946, options [nop,nop,TS val 102928620 ecr 2380269352], length 149
 11:42:50.202547 IP par21s23-in-f3.1e100.net.https > BP-Linux8.53440: Flags [.], ack 574, win 286, options [nop,nop,TS val 2023398036 ecr 102928618], length 0
@@ -10889,10 +10729,6 @@
 11:42:50.724751 IP BP-Linux8 > 192.168.115.1: ICMP echo request, id 27625, seq 39, length 64
 11:42:50.724885 IP 192.168.115.1 > BP-Linux8: ICMP echo reply, id 27625, seq 39, length 64
 11:42:50.724966 IP BP-Linux8.ssh > 192.168.190.130.50245: Flags [P.], seq 4989:5089, ack 160, win 291, options [nop,nop,TS val 102928752 ecr 377997147], length 100
-11:42:50.738801 IP BP-Linux8.40696 > ns1.lan.rt.domain: 9911+ A? translate-pa.googleapis.com. (45)
-11:42:50.738814 IP BP-Linux8.40696 > ns1.lan.rt.domain: 42008+ AAAA? translate-pa.googleapis.com. (45)
-11:42:50.744684 IP ns1.lan.rt.domain > BP-Linux8.40696: 42008 1/0/0 AAAA 2a00:1450:4007:80d::200a (73)
-11:42:50.744824 IP ns1.lan.rt.domain > BP-Linux8.40696: 9911 1/0/0 A 142.250.179.106 (61)
 11:42:50.745034 IP BP-Linux8.54055 > par21s20-in-f10.1e100.net.https: Flags [S], seq 1799980202, win 29200, options [mss 1460,sackOK,TS val 102928757 ecr 0,nop,wscale 7], length 0
 11:42:50.745157 IP 192.168.190.130.50245 > BP-Linux8.ssh: Flags [.], ack 5089, win 2046, options [nop,nop,TS val 377998113 ecr 102928752], length 0
 11:42:50.750798 IP BP-Linux8.53324 > www.aggloroanne.fr.https: Flags [P.], seq 16993:17692, ack 654180, win 1815, options [nop,nop,TS val 102928758 ecr 1512075151], length 699
@@ -10977,8 +10813,6 @@
 11:42:51.021800 IP BP-Linux8.41373 > par21s23-in-f10.1e100.net.https: Flags [.], ack 10751, win 475, options [nop,nop,TS val 102928826 ecr 3978147641], length 0
 11:42:51.021855 IP BP-Linux8.41373 > par21s23-in-f10.1e100.net.https: Flags [P.], seq 909:955, ack 10751, win 475, options [nop,nop,TS val 102928826 ecr 3978147641], length 46
 11:42:51.039029 IP par21s23-in-f10.1e100.net.https > BP-Linux8.41373: Flags [.], ack 955, win 269, options [nop,nop,TS val 3978147659 ecr 102928826], length 0
-11:42:51.040312 IP BP-Linux8.32808 > ns1.lan.rt.domain: 32540+ PTR? 106.179.250.142.in-addr.arpa. (46)
-11:42:51.064307 IP ns1.lan.rt.domain > BP-Linux8.32808: 32540 1/0/0 PTR par21s20-in-f10.1e100.net. (85)
 11:42:51.108734 IP BP-Linux8.40678 > mauves.univ-st-etienne.fr.https: Flags [.], ack 533278, win 1901, options [nop,nop,TS val 102928848 ecr 172359615], length 0
 11:42:51.108751 IP BP-Linux8.40679 > mauves.univ-st-etienne.fr.https: Flags [.], ack 217300, win 1903, options [nop,nop,TS val 102928848 ecr 172359616], length 0
 11:42:51.108754 IP BP-Linux8.40680 > mauves.univ-st-etienne.fr.https: Flags [.], ack 411284, win 1563, options [nop,nop,TS val 102928848 ecr 172359616], length 0
@@ -11014,4 +10848,3 @@
 11:42:53.889151 IP 192.168.190.130.50245 > BP-Linux8.ssh: Flags [.], ack 5617, win 2044, options [nop,nop,TS val 378001228 ecr 102929538], length 0
 11:42:55.524738 IP BP-Linux8.37256 > par21s05-in-f131.1e100.net.http: Flags [.], ack 703, win 240, options [nop,nop,TS val 102929952 ecr 90778765], length 0
 11:42:55.536521 IP par21s05-in-f131.1e100.net.http > BP-Linux8.37256: Flags [.], ack 433, win 261, options [nop,nop,TS val 90788781 ecr 102922438], length 0
-
